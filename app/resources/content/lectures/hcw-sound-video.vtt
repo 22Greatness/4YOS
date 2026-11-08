@@ -1,0 +1,465 @@
+WEBVTT
+
+00:30:21.650 --> 00:30:26.330
+to video file formats themselves then
+these excerpts from some actual videos.
+
+00:30:26.330 --> 00:30:30.050
+Indeed, you can think of a video file
+format as very reminiscent of something
+
+00:30:30.050 --> 00:30:30.900
+from the real world.
+
+00:30:30.900 --> 00:30:34.130
+In fact, as a kid if you either made
+or played with these little flip books,
+
+00:30:34.130 --> 00:30:38.240
+you might have had the ability to
+actually see something animated really
+
+00:30:38.240 --> 00:30:41.870
+by just flipping through some physical
+pieces of paper really quickly.
+
+00:30:41.870 --> 00:30:45.320
+Well, that's all a video
+format is in the digital age.
+
+00:30:45.320 --> 00:30:49.370
+It is simply a file format that contains
+essentially a whole bunch of images
+
+00:30:49.370 --> 00:30:53.630
+inside of it, each of which is shown
+to you so fast that there appears to be
+
+00:30:53.630 --> 00:30:55.940
+the illusion just like this of motion.
+
+00:30:55.940 --> 00:30:59.330
+And you're seeing 24 images per
+second, 30 images per second,
+
+00:30:59.330 --> 00:31:03.710
+and it's not necessarily that
+they're all PNGs or JPEGS or gifs
+
+00:31:03.710 --> 00:31:05.930
+or actual images inside
+of it, there's actually
+
+00:31:05.930 --> 00:31:09.530
+more complicated and sophisticated ways
+of storing the information so you're
+
+00:31:09.530 --> 00:31:11.697
+not just storing each of the frames.
+
+00:31:11.697 --> 00:31:13.655
+You can actually use
+algorithms and mathematics
+
+00:31:13.655 --> 00:31:15.770
+to actually go from
+one frame to another.
+
+00:31:15.770 --> 00:31:19.070
+And indeed, there are some
+very clever opportunities
+
+00:31:19.070 --> 00:31:23.000
+when it comes to videos for
+compressing video formats themselves.
+
+00:31:23.000 --> 00:31:27.500
+We can certainly leverage within
+frames or Intraframe so to speak,
+
+00:31:27.500 --> 00:31:30.334
+the exact same techniques that
+we saw earlier with something
+
+00:31:30.334 --> 00:31:33.500
+like a gif and an apple where we can
+actually leverage the fact that there's
+
+00:31:33.500 --> 00:31:37.760
+redundancy in a given frame of a video,
+throw that information away, and just
+
+00:31:37.760 --> 00:31:42.200
+remember whole sky is blue or the whole
+rest of some line or row in a file
+
+00:31:42.200 --> 00:31:45.380
+is blue and, therefore, save
+on information and bits.
+
+00:31:45.380 --> 00:31:48.230
+But with videos you have another
+opportunity, because you don't just
+
+00:31:48.230 --> 00:31:52.400
+have an individual picture, you have
+a picture in every subsequent picture,
+
+00:31:52.400 --> 00:31:54.870
+which might look very similar as well.
+
+00:31:54.870 --> 00:31:59.450
+In fact, if I hold very
+still for multiple seconds,
+
+00:31:59.450 --> 00:32:02.000
+odds are almost everything
+in this video is
+
+00:32:02.000 --> 00:32:04.940
+staying the same except
+for my mouth, apparently
+
+00:32:04.940 --> 00:32:10.730
+my pointer finger and my
+lips and eyes as I blink,
+
+00:32:10.730 --> 00:32:13.710
+but everything else about
+me is pretty much the same.
+
+00:32:13.710 --> 00:32:18.200
+So why would you in your file format
+store all of the various colors
+
+00:32:18.200 --> 00:32:20.330
+that we see behind me and around me?
+
+00:32:20.330 --> 00:32:21.690
+You don't need to do that.
+
+00:32:21.690 --> 00:32:26.030
+You can also leverage something
+called interframe compression, whereby
+
+00:32:26.030 --> 00:32:29.490
+in simplest form you can take a
+look at the current frame of a video
+
+00:32:29.490 --> 00:32:32.387
+and look at the next frame
+and decide what has changed.
+
+00:32:32.387 --> 00:32:34.220
+And maybe look another
+frame after that, see
+
+00:32:34.220 --> 00:32:37.219
+what has changed, and another frame
+after that and see what has changed.
+
+00:32:37.219 --> 00:32:42.620
+And essentially store not every
+image from the starting point
+
+00:32:42.620 --> 00:32:47.630
+to the ending point, but really just the
+differences between those frames that
+
+00:32:47.630 --> 00:32:48.500
+are adjacent.
+
+00:32:48.500 --> 00:32:52.850
+So for instance, if we start off with
+this bee here on a trio of flowers
+
+00:32:52.850 --> 00:32:56.060
+and he moves and he moves
+and he moves, we could--
+
+00:32:56.060 --> 00:32:59.150
+if not compressing this video
+and these four frames that
+
+00:32:59.150 --> 00:33:03.020
+compose the video-- we could just store
+each of those images essentially as is,
+
+00:33:03.020 --> 00:33:06.240
+even though flowers are not
+moving, the leaves are not moving.
+
+00:33:06.240 --> 00:33:08.240
+The only thing that's moving is the bee.
+
+00:33:08.240 --> 00:33:10.970
+Or we can be more clever
+about this just as we were
+
+00:33:10.970 --> 00:33:13.310
+with the blue sky behind the apple.
+
+00:33:13.310 --> 00:33:16.685
+We can recognize that between
+picture one and picture four,
+
+00:33:16.685 --> 00:33:20.540
+or the first four frames of this
+video, the only thing that's moving
+
+00:33:20.540 --> 00:33:22.100
+is indeed that bee.
+
+00:33:22.100 --> 00:33:26.900
+So maybe we should store just what
+we'll call keyframes or a snapshot
+
+00:33:26.900 --> 00:33:29.520
+in time of what the video looks like.
+
+00:33:29.520 --> 00:33:31.640
+And then on each subsequent
+frame, essentially,
+
+00:33:31.640 --> 00:33:34.980
+just remember what information
+has changed, in this case,
+
+00:33:34.980 --> 00:33:38.900
+the position of the bee and leave
+it to the computer playing the video
+
+00:33:38.900 --> 00:33:42.560
+to infer or interpolate
+these inner frames based
+
+00:33:42.560 --> 00:33:44.320
+on those so-called keyframes.
+
+00:33:44.320 --> 00:33:47.630
+Use a bit of clever math, use some
+algorithms to actually figure out
+
+00:33:47.630 --> 00:33:49.700
+that, oh, here's where the bee now is.
+
+00:33:49.700 --> 00:33:53.600
+Let me redraw the exact same flower and
+the exact same leaves behind that bee.
+
+00:33:53.600 --> 00:33:56.150
+But I now only have to
+store really as many bits
+
+00:33:56.150 --> 00:33:58.936
+as it takes to remember
+where the bee now is there,
+
+00:33:58.936 --> 00:34:01.310
+where the bee now is here,
+and then just for good measure
+
+00:34:01.310 --> 00:34:03.854
+to keep everything synchronized
+maybe every few frames
+
+00:34:03.854 --> 00:34:06.770
+we'll have another keyframe that,
+even though it's a little expensive,
+
+00:34:06.770 --> 00:34:08.210
+stores the entirety of the frame.
+
+00:34:08.210 --> 00:34:11.330
+Just in case something goes
+wrong, we can guarantee ourselves
+
+00:34:11.330 --> 00:34:14.929
+that we can reconstruct what the
+video actually is even if there's
+
+00:34:14.929 --> 00:34:17.699
+a little bit of a glitch otherwise.
+
+00:34:17.699 --> 00:34:21.130
+So what are the file formats
+that we have at our disposal?
+
+00:34:21.130 --> 00:34:24.290
+Well, in the video world the terminology
+gets a little more complicated
+
+00:34:24.290 --> 00:34:27.487
+in that there are a number
+of different solutions
+
+00:34:27.487 --> 00:34:28.820
+to the problem of storing video.
+
+00:34:28.820 --> 00:34:31.670
+And indeed these are what the
+world might call containers.
+
+00:34:31.670 --> 00:34:33.810
+And a container is just
+as the name implies,
+
+00:34:33.810 --> 00:34:39.139
+it's a digital container inside of which
+you can put multiple types of data.
+
+00:34:39.139 --> 00:34:41.570
+And the types of data you
+might put into a container
+
+00:34:41.570 --> 00:34:44.389
+would be a video track,
+like the actual footage
+
+00:34:44.389 --> 00:34:46.639
+that you see on the
+screen, an audio track.
+
+00:34:46.639 --> 00:34:49.730
+Which is the actual audio that you
+hear, maybe a secondary audio track.
+
+00:34:49.730 --> 00:34:53.070
+If a film has been dubbed from
+one language into another,
+
+00:34:53.070 --> 00:34:55.699
+you might have multiple audio
+tracks in the same container.
+
+00:34:55.699 --> 00:34:58.940
+And then the software on your computer
+or even on your TV for that matter
+
+00:34:58.940 --> 00:35:00.950
+that's playing back
+this video can actually
+
+00:35:00.950 --> 00:35:04.370
+choose between those
+multiple audio formats.
+
+00:35:04.370 --> 00:35:07.430
+You might have closed captions or
+some other track inside the container.
+
+00:35:07.430 --> 00:35:10.090
+So long story short, a
+container really is just that.
+
+00:35:10.090 --> 00:35:12.790
+It's this bucket inside of which
+is the video and the audio,
+
+00:35:12.790 --> 00:35:16.360
+but maybe multiple formats thereof
+so that you can play them back
+
+00:35:16.360 --> 00:35:18.040
+based on your own preferences.
+
+00:35:18.040 --> 00:35:21.910
+So AVI is a very popular format that's
+been commonly used in the Windows world
+
+00:35:21.910 --> 00:35:23.850
+for years, as has been DIVX.
+
+00:35:23.850 --> 00:35:27.910
+MP4 and Quicktime have been
+more common on the side of Macs,
+
+00:35:27.910 --> 00:35:30.760
+although MP4 is now pretty much
+universal across all browsers
+
+00:35:30.760 --> 00:35:32.650
+and operating systems and more.
+
+00:35:32.650 --> 00:35:35.440
+Otrosca is more of an open
+source container that's
+
+00:35:35.440 --> 00:35:38.230
+meant to be even more
+versatile than these others
+
+00:35:38.230 --> 00:35:42.160
+on this screen capable of storing
+any number of file formats inside.
+
+00:35:42.160 --> 00:35:46.330
+And as to those formats inside,
+they might indeed be video.
+
+00:35:46.330 --> 00:35:47.710
+They might indeed be audio.
+
+00:35:47.710 --> 00:35:49.570
+But within those worlds
+realize there are
+
+00:35:49.570 --> 00:35:53.380
+different ways of storing
+and encoding information,
+
+00:35:53.380 --> 00:35:57.190
+and those inner most rappers
+use what are called codecs
+
+00:35:57.190 --> 00:36:00.460
+where a codek is just a way of
+encoding information in a video
+
+00:36:00.460 --> 00:36:02.710
+or in an audio file format.
+
+00:36:02.710 --> 00:36:05.560
+And there's any number of these
+options as well, but perhaps
+
+00:36:05.560 --> 00:36:09.370
+some of the most common these days is
+something called H.264 for video, which
+
+00:36:09.370 --> 00:36:13.470
+is a way of storing video on disk
+inside of a container, or MPEG-4 part 2,
+
+00:36:13.470 --> 00:36:14.740
+a little bit more verbosely.
+
+00:36:14.740 --> 00:36:16.540
+A popular alternative there too.
+
+00:36:16.540 --> 00:36:19.510
+And then in the world of audio
+files, two terms we've seen before,
+
+00:36:19.510 --> 00:36:21.730
+and this is where the world
+gets a little confusing,
+
+00:36:21.730 --> 00:36:25.990
+sometimes the container formats are
+the same as the actual media formats.
+
+00:36:25.990 --> 00:36:29.980
+And in this case, AAC and
+MP3 can be standalone files
+
+00:36:29.980 --> 00:36:33.400
+that you download and listen to
+in iTunes or some other software,
+
+00:36:33.400 --> 00:36:40.210
+or they can be tracks inside of a
+container that actually provide a video
+
+00:36:40.210 --> 00:36:43.330
+with the audio that accompanies it.

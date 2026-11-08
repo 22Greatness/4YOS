@@ -1,0 +1,380 @@
+WEBVTT
+
+00:14:51.730 --> 00:14:54.190
+understand zeros and ones, right?
+
+00:14:54.190 --> 00:14:57.100
+They only understand the
+so-called binary system.
+
+00:14:57.100 --> 00:15:00.220
+And yet, this does not quite
+look like zeros and ones.
+
+00:15:00.220 --> 00:15:03.910
+So how is it that I, who can just
+barely understand this as a human,
+
+00:15:03.910 --> 00:15:07.060
+can program a computer using
+this and have it understand this,
+
+00:15:07.060 --> 00:15:09.560
+even though these, themselves,
+are not zeros and ones?
+
+00:15:09.560 --> 00:15:14.110
+In other words, how do we
+get this to that instead?
+
+00:15:14.110 --> 00:15:16.300
+Well, it turns out when
+writing a computer program,
+
+00:15:16.300 --> 00:15:17.874
+there's often multiple steps.
+
+00:15:17.874 --> 00:15:19.540
+And sometimes these steps are automated.
+
+00:15:19.540 --> 00:15:22.840
+But sometimes you have to type, you
+have to make them happen manually.
+
+00:15:22.840 --> 00:15:26.560
+And in general, the process
+of converting this code
+
+00:15:26.560 --> 00:15:30.580
+here, or source code, which tends
+to be English-like syntax that
+
+00:15:30.580 --> 00:15:35.530
+does follow a set of standards and use
+a certain vocabulary, this being C,
+
+00:15:35.530 --> 00:15:41.710
+the language known as C, I can convert
+this source code to machine code, that
+
+00:15:41.710 --> 00:15:45.310
+is zeros and ones that look
+like this by running this source
+
+00:15:45.310 --> 00:15:49.000
+code through a special type of program
+quite simply called a Compiler.
+
+00:15:49.000 --> 00:15:52.300
+A compiler is simply a
+program that compiles code,
+
+00:15:52.300 --> 00:15:56.830
+converts it from source code to machine
+code so that the human can write it,
+
+00:15:56.830 --> 00:16:00.960
+but the machine can
+ultimately understand it.
+
+00:16:00.960 --> 00:16:02.610
+Consider another example here.
+
+00:16:02.610 --> 00:16:07.740
+This program looks almost kind
+of-- well, not really the same.
+
+00:16:07.740 --> 00:16:10.819
+But it's written in a very
+similar language called C++.
+
+00:16:10.819 --> 00:16:13.860
+Now, here too, you might not recognize
+some of the symbols on the screen.
+
+00:16:13.860 --> 00:16:16.800
+But you probably do recognize
+hello world, this time
+
+00:16:16.800 --> 00:16:18.600
+without the backslash n.
+
+00:16:18.600 --> 00:16:22.980
+And even though we have a different word
+up here, I/O stream and standard, endl
+
+00:16:22.980 --> 00:16:26.940
+here, odds are it's a pretty
+good bet that this program too
+
+00:16:26.940 --> 00:16:28.110
+does print hello world.
+
+00:16:28.110 --> 00:16:31.260
+And this is already, in simplest
+form, testament to the fact
+
+00:16:31.260 --> 00:16:36.330
+that many programming languages
+do the same things differently.
+
+00:16:36.330 --> 00:16:41.670
+Indeed, whether you know C or C++ or
+something like Java or PHP or Python
+
+00:16:41.670 --> 00:16:44.100
+or Ruby, or any number of
+other languages, odds are,
+
+00:16:44.100 --> 00:16:47.700
+at the end of the day, you can actually
+solve the same problems using any
+
+00:16:47.700 --> 00:16:50.850
+number of different languages,
+much like you, as a human,
+
+00:16:50.850 --> 00:16:55.080
+can express yourself verbally in
+any number of spoken languages.
+
+00:16:55.080 --> 00:16:57.630
+But it might just be
+easier to communicate
+
+00:16:57.630 --> 00:16:59.880
+with other humans in one language.
+
+00:16:59.880 --> 00:17:02.220
+It might just be easier
+and less time consuming
+
+00:17:02.220 --> 00:17:05.577
+to solve problems using one
+programming language over another.
+
+00:17:05.577 --> 00:17:08.160
+And this indeed, in part at
+least, explains why there are just
+
+00:17:08.160 --> 00:17:09.450
+so many programming languages.
+
+00:17:09.450 --> 00:17:10.932
+We've seen just two so far.
+
+00:17:10.932 --> 00:17:12.390
+But many different languages exist.
+
+00:17:12.390 --> 00:17:14.973
+Because as more and more time
+passes, and more and more humans
+
+00:17:14.973 --> 00:17:18.150
+use these languages, do they
+realize, wow, I could do this better.
+
+00:17:18.150 --> 00:17:20.770
+Or gee, I wish I had this
+feature instead or wow,
+
+00:17:20.770 --> 00:17:24.210
+I wish I could type fewer keys
+on the keyboard in order just
+
+00:17:24.210 --> 00:17:26.520
+to have my computer say hello world.
+
+00:17:26.520 --> 00:17:29.550
+And so you'll find that different
+languages do things differently
+
+00:17:29.550 --> 00:17:31.710
+even if the end result is the same.
+
+00:17:31.710 --> 00:17:35.580
+For instance, here is a
+language called Python.
+
+00:17:35.580 --> 00:17:39.030
+And thank God-- this is the
+simplest example of the ones
+
+00:17:39.030 --> 00:17:42.000
+we've seen thus far-- it
+really just says what it means.
+
+00:17:42.000 --> 00:17:45.510
+No hashtags up top, no
+curly braces, apparently.
+
+00:17:45.510 --> 00:17:47.790
+Just print hello world.
+
+00:17:47.790 --> 00:17:51.270
+And that's with this
+program in Python does.
+
+00:17:51.270 --> 00:17:53.820
+Now Python, it's worth
+noting, is a different type
+
+00:17:53.820 --> 00:17:57.390
+of language in most implementations.
+
+00:17:57.390 --> 00:18:00.750
+That is to say, you typically
+don't write Python source code
+
+00:18:00.750 --> 00:18:04.410
+and then manually convert it to
+machine code, zeros and ones.
+
+00:18:04.410 --> 00:18:08.490
+Rather, there is a special program that
+you use that's not called a compiler,
+
+00:18:08.490 --> 00:18:10.200
+but called an interpreter.
+
+00:18:10.200 --> 00:18:13.110
+Because what's also the
+case, with some languages,
+
+00:18:13.110 --> 00:18:15.630
+is that rather than convert
+them directly to zeros and ones,
+
+00:18:15.630 --> 00:18:20.000
+that your CPU, your computer's
+brain understands directly,
+
+00:18:20.000 --> 00:18:23.370
+you instead convert them to some
+intermediate language, generally known
+
+00:18:23.370 --> 00:18:24.360
+as bytecode.
+
+00:18:24.360 --> 00:18:27.280
+Java is the same way, as
+are some other languages.
+
+00:18:27.280 --> 00:18:29.490
+And so with Python,
+before running this, I
+
+00:18:29.490 --> 00:18:34.290
+might actually compile it or
+convert it to this much more
+
+00:18:34.290 --> 00:18:35.670
+cryptic-looking format.
+
+00:18:35.670 --> 00:18:38.550
+This is not code that I, myself,
+would particularly enjoy writing.
+
+00:18:38.550 --> 00:18:42.330
+But this is what's outputted
+when you write Python code.
+
+00:18:42.330 --> 00:18:44.790
+And it's outputted as
+something called bytecode.
+
+00:18:44.790 --> 00:18:47.810
+So this is just an intermediate format
+that still is somewhat readable.
+
+00:18:47.810 --> 00:18:50.380
+It's at least alphabetical
+characters and not zeros and ones.
+
+00:18:50.380 --> 00:18:52.860
+So as a human I kind
+of sort of can read it.
+
+00:18:52.860 --> 00:18:55.180
+But my computer can
+absolutely read this.
+
+00:18:55.180 --> 00:18:58.830
+Specifically, a program called
+an Interpreter on my computer,
+
+00:18:58.830 --> 00:19:01.860
+that, I could download to my
+Mac or PC or some other device
+
+00:19:01.860 --> 00:19:04.660
+can understand these
+lines one at a time.
+
+00:19:04.660 --> 00:19:06.810
+And so generally, a
+language like Python might
+
+00:19:06.810 --> 00:19:10.800
+again, be compiled to an intermediate
+language like this here, this bytecode.
+
+00:19:10.800 --> 00:19:14.760
+And then it's this code, ultimately,
+that's read by the machine.
+
+00:19:14.760 --> 00:19:17.670
+But the takeaway for us
+is really, quite simply,
+
+00:19:17.670 --> 00:19:20.340
+that there are different
+ways of doing the same thing
+
+00:19:20.340 --> 00:19:21.750
+in any number of languages.
+
+00:19:21.750 --> 00:19:25.210
+And even among those languages, do
+they get used in different ways?
+
+00:19:25.210 --> 00:19:29.040
+Sometimes you have to compile your
+code and then run the resulting machine
+
+00:19:29.040 --> 00:19:31.410
+code, the zeros and ones,
+by double clicking an icon
+
+00:19:31.410 --> 00:19:32.940
+or typing some command.
+
+00:19:32.940 --> 00:19:36.420
+Or might you be able to write your
+code and not explicitly compile
+
+00:19:36.420 --> 00:19:38.190
+it, just instead interpret it.
+
+00:19:38.190 --> 00:19:40.320
+The steps might feel or
+be a little different.
+
+00:19:40.320 --> 00:19:44.850
+But at the end of the day, most
+users experience the software
+
+00:19:44.850 --> 00:19:47.400
+in a familiar way, by
+double-clicking an icon
+
+00:19:47.400 --> 00:19:49.290
+by running in the name of a command.
+
+00:19:49.290 --> 00:19:52.110
+And for all intents and purposes,
+your users or your customers
+
+00:19:52.110 --> 00:19:55.540
+don't need to know or care what
+language something is written in,

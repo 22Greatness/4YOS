@@ -1,0 +1,504 @@
+WEBVTT
+
+00:35:45.930 --> 00:35:49.380
+But the goal is to get that data
+closer and closer and closer
+
+00:35:49.380 --> 00:35:52.690
+to your computer's brain where
+it can do some actual work.
+
+00:35:52.690 --> 00:35:55.740
+Indeed, if you think of the CPU as
+being at the bottom of this funnel,
+
+00:35:55.740 --> 00:35:58.560
+that's to whom you want
+to get all of this data.
+
+00:35:58.560 --> 00:36:02.010
+So throughout this funnel, you might
+have your hard disk or your solid state
+
+00:36:02.010 --> 00:36:05.190
+disk up here which stores a lot of
+your files a lot of your programs
+
+00:36:05.190 --> 00:36:09.120
+persistently in a nonvolatile way
+so that it's permanent even when
+
+00:36:09.120 --> 00:36:11.910
+the power or battery no longer works.
+
+00:36:11.910 --> 00:36:16.740
+But that hard disk or solid state
+disk ultimately feeds information down
+
+00:36:16.740 --> 00:36:18.600
+to your computer's RAM.
+
+00:36:18.600 --> 00:36:21.480
+But the ram is not the last
+stop before the computer's CPU.
+
+00:36:21.480 --> 00:36:24.150
+It turns out that there's
+other types of memory
+
+00:36:24.150 --> 00:36:28.420
+that a computer has that you might even
+see mentioned on your computer screen.
+
+00:36:28.420 --> 00:36:30.930
+So if up here you have
+your disk, whether it's
+
+00:36:30.930 --> 00:36:33.930
+a hard disk drive or a
+solid state disk drive,
+
+00:36:33.930 --> 00:36:36.060
+you might have quite a bit of this.
+
+00:36:36.060 --> 00:36:41.550
+This might be in the order of gigabytes
+or terabytes, billions of bytes
+
+00:36:41.550 --> 00:36:43.080
+or trillions of bytes.
+
+00:36:43.080 --> 00:36:48.330
+That gets fed into, ultimately, your
+computer's RAM, which probably exists
+
+00:36:48.330 --> 00:36:51.600
+on the order of these days of
+gigabytes, but fewer gigabytes
+
+00:36:51.600 --> 00:36:52.810
+than your actual disk.
+
+00:36:52.810 --> 00:36:55.140
+Down here you're going to have your CPU.
+
+00:36:55.140 --> 00:36:58.410
+And indeed, the goal is to
+get your data to the CPU.
+
+00:36:58.410 --> 00:37:00.660
+And the CPU, of course,
+is measured not in bytes
+
+00:37:00.660 --> 00:37:02.790
+but in gigahertz-- the
+number of billions of things
+
+00:37:02.790 --> 00:37:05.520
+it can do per second with that data.
+
+00:37:05.520 --> 00:37:09.030
+But there's also tends to be
+something in between RAM and CPU.
+
+00:37:09.030 --> 00:37:14.130
+There's often something called
+Level 3 cache, which might
+
+00:37:14.130 --> 00:37:16.590
+exist in the form of megabytes worth.
+
+00:37:16.590 --> 00:37:19.980
+Then it goes into what's
+called Level 2 cache, which
+
+00:37:19.980 --> 00:37:21.840
+is another type of
+memory, which also might
+
+00:37:21.840 --> 00:37:26.610
+be in the kilobyte or thousands
+of bytes or megabyte range.
+
+00:37:26.610 --> 00:37:30.570
+And then there might be L1
+cache, which doesn't quite
+
+00:37:30.570 --> 00:37:31.680
+fit on this on the screen.
+
+00:37:31.680 --> 00:37:32.310
+But that's OK.
+
+00:37:32.310 --> 00:37:35.460
+Because it hints at just how small
+of a physical device this is,
+
+00:37:35.460 --> 00:37:38.637
+which might be on the
+order of, say, kilobytes.
+
+00:37:38.637 --> 00:37:39.720
+So these values will vary.
+
+00:37:39.720 --> 00:37:42.160
+And they'll certainly change over time.
+
+00:37:42.160 --> 00:37:45.480
+And so what's the pattern, then,
+among these various types of memory
+
+00:37:45.480 --> 00:37:47.130
+leading to the CPU?
+
+00:37:47.130 --> 00:37:49.770
+Well, the disk, whether a
+hard disk or solid state disk,
+
+00:37:49.770 --> 00:37:52.800
+is not only nonvolatile--
+sticks around permanently,
+
+00:37:52.800 --> 00:37:56.640
+and it's where your files and your
+programs are stored when the power is
+
+00:37:56.640 --> 00:37:57.391
+off--
+
+00:37:57.391 --> 00:37:59.640
+that's the biggest of these
+various types of memories,
+
+00:37:59.640 --> 00:38:00.960
+but it's also the slowest.
+
+00:38:00.960 --> 00:38:04.520
+Even solid state is slower than
+some of these other memories
+
+00:38:04.520 --> 00:38:06.510
+below it on the funnel here.
+
+00:38:06.510 --> 00:38:10.170
+Meanwhile, RAM tends to exist,
+still on the order of gigabytes,
+
+00:38:10.170 --> 00:38:13.260
+but maybe 1 gigabyte, 4
+gigabytes, 16, maybe more
+
+00:38:13.260 --> 00:38:15.300
+if you've splurged on
+a really nice computer.
+
+00:38:15.300 --> 00:38:17.610
+But RAM recall is where
+programs and files
+
+00:38:17.610 --> 00:38:21.750
+live when you double-clicked or
+opened them in order to use them
+
+00:38:21.750 --> 00:38:23.610
+on your computer at a given moment.
+
+00:38:23.610 --> 00:38:26.190
+Meanwhile though-- and this
+is values you don't really
+
+00:38:26.190 --> 00:38:28.509
+control because they tend
+to be associated closely
+
+00:38:28.509 --> 00:38:30.300
+with the CPU or the
+motherboard that you've
+
+00:38:30.300 --> 00:38:35.460
+bought as part of your computer-- that
+RAM feeds information into Level 3
+
+00:38:35.460 --> 00:38:41.820
+and/or Level 2 and/or Level 1 cache in
+turn so that it's less memory there,
+
+00:38:41.820 --> 00:38:43.860
+but it's super, super fast.
+
+00:38:43.860 --> 00:38:46.960
+And that ensures that, even though
+there's less of this memory--
+
+00:38:46.960 --> 00:38:50.490
+Level 1 cache exists in smaller
+quantities than Level 3--
+
+00:38:50.490 --> 00:38:52.230
+that funnel is just always filled.
+
+00:38:52.230 --> 00:38:54.396
+There's always something
+at the bottom of the funnel
+
+00:38:54.396 --> 00:38:55.740
+ready to be fed into the CPU.
+
+00:38:55.740 --> 00:38:59.820
+So the CPU never, theoretically,
+has to wait for any data--
+
+00:38:59.820 --> 00:39:03.720
+to get numbers to crunch, or
+text to display, or the like.
+
+00:39:03.720 --> 00:39:07.230
+Meanwhile, there exists,
+turns out, tiny little pieces
+
+00:39:07.230 --> 00:39:11.040
+of memory in a computer that we'll
+give a name to called registers.
+
+00:39:11.040 --> 00:39:16.740
+And these registers typically only hold
+1 byte or 4 bytes or 8 bytes total.
+
+00:39:16.740 --> 00:39:18.930
+So they're the smallest unit of memory.
+
+00:39:18.930 --> 00:39:22.620
+But it's in those registers
+that the CPU stores values
+
+00:39:22.620 --> 00:39:27.100
+like numbers like those decimal
+numbers we discussed earlier.
+
+00:39:27.100 --> 00:39:29.644
+And if it wants to perform
+arithmetic of any sort,
+
+00:39:29.644 --> 00:39:32.560
+it stores those values in these
+registers, actually performs the math,
+
+00:39:32.560 --> 00:39:35.190
+stores the result in another
+register, so it's, then, ready
+
+00:39:35.190 --> 00:39:39.210
+to be loaded back through this funnel
+into something like the computer's RAM
+
+00:39:39.210 --> 00:39:41.850
+or ultimately saved back to disk.
+
+00:39:41.850 --> 00:39:43.500
+But there's another trade-off here.
+
+00:39:43.500 --> 00:39:47.100
+Besides the top of this funnel
+being bigger and slower,
+
+00:39:47.100 --> 00:39:50.036
+and the bottom of this funnel
+being smaller and faster,
+
+00:39:50.036 --> 00:39:52.410
+the bottom of the funnel also
+tends to be more expensive,
+
+00:39:52.410 --> 00:39:54.870
+which also explains, in
+part, why you see less
+
+00:39:54.870 --> 00:39:56.900
+of this memory inside of a computer.
+
+00:39:56.900 --> 00:39:59.239
+The Level 1 cache might be
+more expensive than ram,
+
+00:39:59.239 --> 00:40:01.530
+so you have less of it and,
+technically, you don't even
+
+00:40:01.530 --> 00:40:03.696
+need as much of it so long
+as there's enough to keep
+
+00:40:03.696 --> 00:40:05.700
+data waiting for the CPU.
+
+00:40:05.700 --> 00:40:08.520
+But cost is certainly
+another trade-off as well.
+
+00:40:08.520 --> 00:40:11.746
+But the types of numbers that you, as
+a consumer, might care about, really,
+
+00:40:11.746 --> 00:40:13.620
+would be how big the
+disk in your computer is
+
+00:40:13.620 --> 00:40:16.229
+and how much data and programs
+and files you can store,
+
+00:40:16.229 --> 00:40:17.520
+how much RAM your computer has.
+
+00:40:17.520 --> 00:40:19.920
+Because that correlates
+with just how much work
+
+00:40:19.920 --> 00:40:22.160
+you can do at once, how
+many files and programs you
+
+00:40:22.160 --> 00:40:25.450
+can keep running simultaneously
+without having to quit any of them.
+
+00:40:25.450 --> 00:40:28.830
+And so cache, finally,
+which is more closely
+
+00:40:28.830 --> 00:40:32.380
+tied to the CPU and the motherboard
+in your computer and, therefore,
+
+00:40:32.380 --> 00:40:35.610
+isn't really a number you have as
+much control over as the consumer,
+
+00:40:35.610 --> 00:40:38.730
+just ensures that the
+data is actually ready.
+
+00:40:38.730 --> 00:40:40.760
+Now this might all
+sound fairly technical.
+
+00:40:40.760 --> 00:40:44.220
+But these caches, whether
+Level 3 or 2 or 1 are actually
+
+00:40:44.220 --> 00:40:47.230
+quite similar to techniques that
+we humans use in the real world,
+
+00:40:47.230 --> 00:40:51.200
+for instance, even at
+your local candy store.
+
+00:40:51.200 --> 00:40:53.300
+Here's my candy store,
+and I'm open for business.
+
+00:40:53.300 --> 00:40:55.860
+SPEAKER: Candy, please?
+
+00:40:56.880 --> 00:40:58.630
+DAVID J. MALAN: Let
+me get you some candy.
+
+00:40:58.630 --> 00:41:00.250
+[FOOTSTEPS]
+
+00:41:00.250 --> 00:41:05.381
+Thank you.
+
+00:41:05.880 --> 00:41:07.816
+Come again.
+
+00:41:07.816 --> 00:41:10.190
+Now that was not very efficient
+to have to go all the way
+
+00:41:10.190 --> 00:41:12.330
+and back into the store
+room to get the candy.
+
+00:41:12.330 --> 00:41:15.270
+Much more efficient would
+be to keep it closer to me
+
+00:41:15.270 --> 00:41:19.770
+in a place that's faster to access
+much like a cache of candy right here
+
+00:41:19.770 --> 00:41:20.520
+on the counter.
+
+00:41:20.520 --> 00:41:22.394
+In fact, let me go ahead
+and ready that cash.
+
+00:41:22.394 --> 00:41:24.496
+[FOOTSTEPS]
+
+00:41:24.496 --> 00:41:28.490
+And now, with this cache of candy
+am I open for business again.
+
+00:41:33.106 --> 00:41:34.390
+SPEAKER: Candy, please?
+
+00:41:34.390 --> 00:41:35.473
+DAVID J. MALAN: Thank you.
+
+00:41:35.473 --> 00:41:36.550
+Come again.
+
+00:41:36.550 --> 00:41:38.950
+Now this is a small cache
+of candy, but it's fast.
+
+00:41:38.950 --> 00:41:42.850
+And, with it, can I provide my customers
+or really my CPU with information
+
+00:41:42.850 --> 00:41:44.230
+much more quickly.
+
+00:41:44.230 --> 00:41:47.250
+Now we can actually see the sizes
+of these caches in that same output
+
+00:41:50.900 --> 00:41:53.404
+that we saw earlier
+from Windows and Mac OS.
+
+00:41:53.404 --> 00:41:55.820
+For instance, if we look again
+at the Windows Task Manager
+
+00:41:55.820 --> 00:41:59.630
+and look down here, you can actually
+see that this particular laptop
+
+00:41:59.630 --> 00:42:03.800
+had L1 cache on the order of 128
+kilobytes or thousands of bytes.
+
+00:42:03.800 --> 00:42:09.170
+It had 512 kilobytes of L2 cache,
+and 4 megabytes of L3 cache.
+
+00:42:09.170 --> 00:42:12.240
+Meanwhile, if we take a look at
+that same MacBook Pro from earlier,
+
+00:42:12.240 --> 00:42:17.450
+you'll see that it has 256 kilobytes
+of cache, 4 megabytes of L3 cache,
+
+00:42:17.450 --> 00:42:21.260
+doesn't happen to mention L1 cache, but
+odds are, it's indeed there on the CPU,
+
+00:42:21.260 --> 00:42:24.230
+just not reported by this program.

@@ -1,0 +1,158 @@
+{
+  "p1-test-function": [
+    {
+      "start": "00:00",
+      "startSec": 0,
+      "text": "Imagine you're checking a delivery rule before it goes live. The fee is waived when the order has at least ten items."
+    },
+    {
+      "start": "00:06",
+      "startSec": 6.577,
+      "text": "Before you touch the code, decide what should happen at exactly ten. That's the value we will come back to."
+    },
+    {
+      "start": "00:15",
+      "startSec": 15.39,
+      "text": "The first function uses greater than ten. Nine returns false, and eleven returns true. Both answers look fine."
+    },
+    {
+      "start": "00:21",
+      "startSec": 21.643,
+      "text": "Now try ten. The function returns false. Our rule includes ten, so the expected answer is true."
+    },
+    {
+      "start": "00:27",
+      "startSec": 27.749,
+      "text": "An assert checks that a condition is true. If it is false, Python stops and tells us which check failed."
+    },
+    {
+      "start": "00:33",
+      "startSec": 33.589,
+      "text": "Here, the test records our expectation. The failure tells us where to look. It doesn't tell us to change the expectation."
+    },
+    {
+      "start": "00:41",
+      "startSec": 41.492,
+      "text": "Change greater than to greater than or equal to. Run all three tests, including the ones that already passed."
+    },
+    {
+      "start": "00:47",
+      "startSec": 47.565,
+      "text": "A boundary test checks the point where the result changes. The neighbouring values help catch a repair that breaks either side."
+    },
+    {
+      "start": "00:55",
+      "startSec": 55.229,
+      "text": "A parcel is accepted if it weighs at most five kilograms. Which values would catch a function that rejects exactly five?"
+    },
+    {
+      "start": "01:02",
+      "startSec": 62.517,
+      "text": "Pause and write the expected answer for each value. Then explain which of your tests distinguishes the two rules."
+    }
+  ],
+  "dd-quartiles": [
+    {
+      "start": "00:00",
+      "startSec": 0,
+      "text": "Five requests took twelve, fourteen, fifteen, sixteen and eighteen minutes. Picture them in order, one dot per request."
+    },
+    {
+      "start": "00:06",
+      "startSec": 6.192,
+      "text": "The middle is the third position. That puts the median at fifteen minutes. There are two positions on either side."
+    },
+    {
+      "start": "00:13",
+      "startSec": 13.02,
+      "text": "For the mean, add the waits and divide by how many there are. Seventy-five divided by five gives fifteen."
+    },
+    {
+      "start": "00:19",
+      "startSec": 19.265,
+      "text": "Now imagine the longest request took forty-eight minutes. Pause and predict which number moves, the mean or the median."
+    },
+    {
+      "start": "00:28",
+      "startSec": 28.883,
+      "text": "The sum rises by thirty minutes. Shared across five requests, that raises the mean by six, from fifteen to twenty-one."
+    },
+    {
+      "start": "00:35",
+      "startSec": 35.322,
+      "text": "The third position still holds fifteen. The median stays there. One number reports the average cost in minutes. The other locates the middle wait."
+    },
+    {
+      "start": "00:43",
+      "startSec": 43.586,
+      "text": "For quartiles, leave out the centre of this odd-sized batch and find the median of each half. Twelve and fourteen give thirteen."
+    },
+    {
+      "start": "00:50",
+      "startSec": 50.05,
+      "text": "The upper half changes from sixteen and eighteen to sixteen and forty-eight. Its median moves from seventeen to thirty-two. The gap between the quartiles grows from four to nineteen."
+    },
+    {
+      "start": "01:00",
+      "startSec": 60.886,
+      "text": "Try these six waits. Find the middle using both central positions, then split the data into two halves to find the quartiles."
+    },
+    {
+      "start": "01:07",
+      "startSec": 67.636,
+      "text": "In your handover, say what the typical middle wait was and mention the longest wait separately. Tell the reader how many requests you observed."
+    }
+  ],
+  "mth-sets": [
+    {
+      "start": "00:00",
+      "startSec": 0,
+      "text": "A team has twenty-four people. Twelve can review code, nine can test releases, and five can do both."
+    },
+    {
+      "start": "00:05",
+      "startSec": 5.729,
+      "text": "If you add twelve and nine, who gets counted twice? Think about one person who belongs to both groups."
+    },
+    {
+      "start": "00:14",
+      "startSec": 14.062,
+      "text": "Put the five people who do both in the overlap. Seven people review only, and four test only."
+    },
+    {
+      "start": "00:19",
+      "startSec": 19.556,
+      "text": "These are disjoint groups. That means no one belongs to two of the three regions we just made."
+    },
+    {
+      "start": "00:24",
+      "startSec": 24.996,
+      "text": "Seven plus five plus four gives sixteen people who do at least one of the tasks. The other eight do neither."
+    },
+    {
+      "start": "00:31",
+      "startSec": 31.057,
+      "text": "We can get sixteen another way. Add twelve and nine, then subtract five to undo the extra count of everyone in both groups."
+    },
+    {
+      "start": "00:39",
+      "startSec": 39.234,
+      "text": "This is more than a shortcut. It gives you a way to audit a report. Every person in the union is also in the whole team."
+    },
+    {
+      "start": "00:45",
+      "startSec": 45.828,
+      "text": "So if the count you calculate is larger than the team, some of the reported figures cannot be true together."
+    },
+    {
+      "start": "00:52",
+      "startSec": 52.812,
+      "text": "Try a different report. The team has eighteen people. Twelve review, nine test, and two do both."
+    },
+    {
+      "start": "00:58",
+      "startSec": 58.674,
+      "text": "Calculate the union, then compare it with the team size. Give both steps in your written argument so another person can check your reasoning."
+    }
+  ]
+}

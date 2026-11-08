@@ -1,0 +1,209 @@
+.camp-welcome {
+  height: 100%;
+  overflow: auto;
+  background: var(--sky);
+}
+
+.camp-site-width {
+  width: min(100% - 2 * clamp(16px, 4vw, 52px), 1200px);
+  margin-inline: auto;
+}
+
+.camp-site-header, .camp-site-footer {
+  background: var(--paper);
+  border-block: 1px solid var(--border);
+}
+
+.camp-site-header > div, .camp-site-footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  padding-block: 10px;
+}
+
+.camp-site-header nav, .camp-site-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px clamp(12px, 3vw, 28px);
+  flex-wrap: wrap;
+}
+
+.camp-site-header a, .camp-text-link {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.camp-site-header a:hover, .camp-text-link:hover { text-decoration: underline; }
+
+.camp-site-header .camp-wordmark {
+  gap: 4px;
+  margin-inline-end: auto;
+  font: 800 clamp(1.125rem, 2vw, 1.5rem)/1 var(--display);
+}
+
+.camp-site-header .camp-wordmark span {
+  padding: 5px 8px;
+  border-radius: 7px;
+  color: #1b2260;
+  background: var(--gold);
+}
+
+.camp-site-header .camp-welcome-account {
+  padding-inline: clamp(7px, 2vw, 18px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.camp-welcome-inner {
+  display: grid;
+  align-items: center;
+  gap: clamp(22px, 4vw, 56px);
+  padding-block: clamp(22px, 5vw, 64px);
+}
+
+.camp-welcome-copy {
+  display: grid;
+  gap: clamp(9px, 2vw, 20px);
+}
+
+.camp-welcome-copy h1 {
+  max-width: 15ch;
+  font-size: clamp(2rem, 4.5vw, 3.75rem);
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.camp-welcome-copy p {
+  max-width: 49ch;
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+  color: var(--soft);
+}
+
+.camp-welcome .btn {
+  color: #1b2260;
+  text-decoration: none;
+}
+
+.camp-welcome-copy .camp-welcome-note { font-size: 0.875rem; }
+
+.camp-welcome-stage {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: var(--paper);
+  box-shadow: 0 5px 0 var(--sky2);
+  overflow: clip;
+}
+
+.camp-ayo-scene {
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at 50% 88%, var(--paper), transparent 65%), var(--sky2);
+}
+
+.camp-welcome-ayo {
+  display: block;
+  width: min(72%, 360px);
+}
+
+.camp-welcome-ayo img { display: block; width: 100%; height: auto; }
+
+.camp-featured-lesson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px clamp(14px, 3vw, 24px);
+  color: var(--ink);
+  text-decoration: none;
+  border-top: 1px solid var(--border);
+}
+
+.camp-featured-lesson strong { display: block; font-family: var(--display); }
+.camp-featured-lesson small { color: var(--soft); }
+.camp-featured-lesson:hover strong { text-decoration: underline; }
+.camp-featured-arrow {
+  display: grid;
+  flex: 0 0 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #1b2260;
+  font-size: 1.25rem;
+}
+
+.camp-public-courses { background: var(--paper); border-block: 1px solid var(--border); }
+.camp-site-section { padding-block: clamp(28px, 4vw, 56px); }
+.camp-site-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-bottom: 18px;
+}
+.camp-site-section h2 { font-size: clamp(1.6rem, 3vw, 2.5rem); }
+.camp-site-section-heading p, .camp-site-footer p { color: var(--soft); margin-top: 4px; }
+.camp-public-course-grid, .camp-how-steps { display: grid; gap: 14px; }
+.camp-public-course {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 6px;
+  padding: clamp(14px, 2vw, 24px);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--sky);
+}
+.camp-public-course h3, .camp-how-steps h3 { font-size: 1.25rem; }
+.camp-public-course p, .camp-how-steps p { color: var(--soft); }
+.camp-public-course a { margin-top: auto; }
+.camp-course-code {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #ffe3a5;
+  color: #463003;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+[data-tone="blue"] .camp-course-code { background: #d4dfff; color: #252f72; }
+[data-tone="green"] .camp-course-code { background: #d4eee2; color: #124b38; }
+.camp-how-steps { counter-reset: step; list-style: none; }
+.camp-how-steps li {
+  counter-increment: step;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.camp-how-steps li::before {
+  content: counter(step, decimal-leading-zero);
+  display: block;
+  color: var(--soft);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.camp-site-footer > div { padding-block: 20px; }
+
+@media (min-width: 700px) {
+  .camp-welcome-inner { grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); }
+  .camp-welcome-copy h1 { max-width: none; }
+  .camp-public-course-grid, .camp-how-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 699px) {
+  .camp-welcome-copy { justify-items: center; text-align: center; }
+  .camp-welcome-ayo { width: min(60%, 220px); }
+  .camp-site-actions { justify-content: center; }
+}
+
+@media (max-width: 460px) {
+  .camp-site-header .camp-how-link { display: none; }
+}

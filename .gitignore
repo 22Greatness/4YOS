@@ -1,0 +1,30 @@
+# Rebuilt or downloaded, not source
+node_modules/
+app/dist/
+app/dist-web/
+app/release/
+tools/
+art/clips/frames*/
+app/resources/content/lessons.json
+app/resources/content/checks.json
+app/resources/content/hcw-courses.json
+
+# Large lecture videos: each has its source recorded in lectures/ATTRIBUTION.md
+app/resources/content/lectures/*.mp4
+
+# Never commit personal records, keys or backups
+*.4yosbak
+records.db
+key.bin
+*.unreadable-*
+.env*
+*.key
+*.pem
+
+# Temporary
+*.tmp
+__pycache__/
+app/*.csv
+app/*.txt
+art/clips/test-*/
+art/clips/test-walk-joins.png

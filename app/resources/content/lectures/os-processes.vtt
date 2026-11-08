@@ -1,0 +1,222 @@
+WEBVTT
+
+00:00:00.350 --> 00:00:05.759
+Let's create a new abstraction called a "process"
+to capture the notion of a running program.
+
+00:00:05.759 --> 00:00:10.330
+A process encompasses all the resources that
+would be used when running a program including
+
+00:00:10.330 --> 00:00:16.119
+those of the CPU, the MMU, input and output
+devices, etc.
+
+00:00:16.119 --> 00:00:21.250
+Each process has a "state" that captures everything
+we know about its execution.
+
+00:00:21.250 --> 00:00:26.140
+The process state includes
+* the hardware state of the CPU, i.e., the
+
+00:00:26.140 --> 00:00:29.050
+values in the registers and program counter.
+
+00:00:29.050 --> 00:00:34.109
+* the contents of the process' virtual address
+space, including code, data values, the stack,
+
+00:00:34.109 --> 00:00:38.100
+and data objects dynamically allocated from
+the heap.
+
+00:00:38.100 --> 00:00:42.710
+Under the management of the MMU, this portion
+of the state can be resident in main memory
+
+00:00:42.710 --> 00:00:46.379
+or can reside in secondary storage.
+
+00:00:46.379 --> 00:00:51.329
+* the hardware state of the MMU, which, as
+we saw earlier, depends on the context-number
+
+00:00:51.329 --> 00:00:53.760
+and page-directory registers.
+
+00:00:53.760 --> 00:00:58.719
+Also included are the pages allocated for
+the hierarchical page map.
+
+00:00:58.719 --> 00:01:03.129
+* additional information about the process'
+input and output activities, such as where
+
+00:01:03.129 --> 00:01:06.750
+it has reached in reading or writing files
+in the file system,
+
+00:01:06.750 --> 00:01:10.360
+the status and buffers associated with open
+network connections,
+
+00:01:10.360 --> 00:01:15.390
+pending events from the user interface (e.g.,
+keyboard characters and mouse clicks), and
+
+00:01:15.390 --> 00:01:16.680
+so on.
+
+00:01:16.680 --> 00:01:23.350
+As we'll see, there is a special, privileged
+process, called the operating system (OS),
+
+00:01:23.350 --> 00:01:26.460
+running in its own kernel-mode context.
+
+00:01:26.460 --> 00:01:33.579
+The OS manages all the bookkeeping for each
+process, arranging for the process run periodically.
+
+00:01:33.579 --> 00:01:38.929
+The OS will provide various services to the
+processes, such as accessing data in files,
+
+00:01:38.929 --> 00:01:43.710
+establishing network connections, managing
+the window system and user interface, and
+
+00:01:43.710 --> 00:01:44.710
+so on.
+
+00:01:44.710 --> 00:01:49.859
+To switch from running one user-mode process
+to another, the OS will need to capture and
+
+00:01:49.859 --> 00:01:54.450
+save the *entire* state of the current user-mode
+process.
+
+00:01:54.450 --> 00:01:58.319
+Some of it already lives in main memory, so
+we're all set there.
+
+00:01:58.319 --> 00:02:01.810
+Some of it will be found in various kernel
+data structures.
+
+00:02:01.810 --> 00:02:06.579
+And some of it we'll need to be able to save
+and restore from the various hardware resources
+
+00:02:06.579 --> 00:02:09.800
+in the CPU and MMU.
+
+00:02:09.800 --> 00:02:15.470
+In order to successfully implement processes,
+the OS must be able to make it seem as if
+
+00:02:15.470 --> 00:02:21.079
+each process was running on its own "virtual
+machine" that works independently of other
+
+00:02:21.079 --> 00:02:24.420
+virtual machines for other processes.
+
+00:02:24.420 --> 00:02:30.610
+Our goal is to efficiently share one physical
+machine between all the virtual machines.
+
+00:02:30.610 --> 00:02:33.920
+Here's a sketch of the organization we're
+proposing.
+
+00:02:33.920 --> 00:02:38.800
+The resources provided by a physical machine
+are shown at the bottom of the slide.
+
+00:02:38.800 --> 00:02:44.000
+The CPU and main memory form the computation
+engine at heart of the system.
+
+00:02:44.000 --> 00:02:48.550
+Connected to the CPU are various peripherals,
+a collective noun coined from the English
+
+00:02:48.550 --> 00:02:53.510
+word "periphery" that indicates the resources
+surrounding the CPU.
+
+00:02:53.510 --> 00:03:00.970
+A timer generates periodic CPU interrupts
+that can be used to trigger periodic actions.
+
+00:03:00.970 --> 00:03:06.730
+Secondary storage provides high-capacity non-volatile
+memories for the system.
+
+00:03:06.730 --> 00:03:09.250
+Connections to the outside world are important
+too.
+
+00:03:09.250 --> 00:03:13.480
+Many computers include USB connections for
+removable devices.
+
+00:03:13.480 --> 00:03:17.620
+And most provide wired or wireless network
+connections.
+
+00:03:17.620 --> 00:03:22.041
+And finally there are usually video monitors,
+keyboards and mice that serve as the user
+
+00:03:22.041 --> 00:03:23.720
+interface.
+
+00:03:23.720 --> 00:03:30.520
+Cameras and microphones are becoming increasing
+important as the next generation of user interface.
+
+00:03:30.520 --> 00:03:35.829
+The physical machine is managed by the OS
+running in the privileged kernel context.
+
+00:03:35.829 --> 00:03:40.980
+The OS handles the low-level interfaces to
+the peripherals, initializes and manages the
+
+00:03:40.980 --> 00:03:43.230
+MMU contexts, and so on.
+
+00:03:43.230 --> 00:03:49.960
+It's the OS that creates the virtual machine
+seen by each process.
+
+00:03:49.960 --> 00:03:54.610
+User-mode programs run directly on the physical
+processor, but their execution can be interrupted
+
+00:03:54.610 --> 00:03:57.810
+by the timer,
+giving the OS the opportunity to save away
+
+00:03:57.810 --> 00:04:02.230
+the current process state and move to running
+the next process.
+
+00:04:02.230 --> 00:04:08.500
+Via the MMU, the OS provides each process
+with an independent virtual address space
+
+00:04:08.500 --> 00:04:12.040
+that's isolated from the actions of other
+processes.
+
+00:04:12.040 --> 00:04:16.760
+The virtual peripherals provided by the OS
+isolate the process from all the details of
+
+00:04:16.760 --> 00:04:20.040
+sharing resources with other processes.

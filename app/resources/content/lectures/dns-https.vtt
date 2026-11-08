@@ -1,0 +1,604 @@
+WEBVTT
+
+00:00:00.199 --> 00:00:01.010
+So let's say
+
+00:00:01.520 --> 00:00:03.110
+as an example we sit down
+
+00:00:03.310 --> 00:00:07.159
+and we're at our computer at home and we go to launch New York Times,
+
+00:00:07.199 --> 00:00:08.729
+HTTPS New York Times,
+
+00:00:08.879 --> 00:00:10.270
+NYTimes.com.
+
+00:00:10.840 --> 00:00:13.080
+What happens between you hitting enter.
+
+00:00:13.629 --> 00:00:15.449
+And that website appearing
+
+00:00:15.860 --> 00:00:16.489
+on your,
+
+00:00:16.500 --> 00:00:17.909
+on your browser of choice,
+
+00:00:18.000 --> 00:00:18.139
+right?
+
+00:00:18.199 --> 00:00:18.620
+How do we,
+
+00:00:18.659 --> 00:00:19.540
+how do we get there?
+
+00:00:19.979 --> 00:00:22.729
+The start of our journey is with a web browser.
+
+00:00:22.830 --> 00:00:24.699
+So what is what is a web browser,
+
+00:00:24.739 --> 00:00:25.209
+right?
+
+00:00:25.659 --> 00:00:26.409
+It's really
+
+00:00:26.659 --> 00:00:27.939
+a program like any other.
+
+00:00:28.100 --> 00:00:29.770
+You have hundreds of programs on your computer,
+
+00:00:29.899 --> 00:00:31.689
+a web browser is one of them.
+
+00:00:31.860 --> 00:00:33.760
+It doesn't necessarily
+
+00:00:34.149 --> 00:00:35.370
+have to be anything special.
+
+00:00:35.459 --> 00:00:39.449
+It is just a program that specifically speaks HTTP.
+
+00:00:40.219 --> 00:00:45.310
+It trades in writing HTTP queries to send out or request to send out.
+
+00:00:45.439 --> 00:00:49.120
+It receives HTTP responses and then renders those and displays
+
+00:00:49.120 --> 00:00:51.760
+them on your computer so you can interact with them.
+
+00:00:52.040 --> 00:00:53.159
+So what does that browser do?
+
+00:00:53.429 --> 00:00:56.439
+Beyond making that communication with those web servers
+
+00:00:56.439 --> 00:00:57.830
+that are out there on the internet,
+
+00:00:58.120 --> 00:00:58.159
+uh,
+
+00:00:58.239 --> 00:01:00.870
+it's going to translate a lot of that,
+
+00:01:01.120 --> 00:01:01.370
+um,
+
+00:01:01.479 --> 00:01:04.270
+fairly ugly behind the scenes computer speak
+
+00:01:04.560 --> 00:01:09.310
+into a beautiful functional website that you are used to interacting with.
+
+00:01:10.060 --> 00:01:11.169
+So in doing so,
+
+00:01:11.290 --> 00:01:16.840
+the first thing we're gonna need to do is we're going to need to draft an HTTP request,
+
+00:01:17.090 --> 00:01:19.489
+meaning we need to ask a question of a computer
+
+00:01:19.489 --> 00:01:22.159
+somewhere else in the world to say please send me
+
+00:01:22.360 --> 00:01:25.100
+the homepage for NewYorkTimes.com.
+
+00:01:25.370 --> 00:01:26.840
+So we're gonna draft this request,
+
+00:01:27.100 --> 00:01:27.139
+uh,
+
+00:01:27.250 --> 00:01:29.520
+and there are a number of pieces of this
+
+00:01:29.689 --> 00:01:30.959
+that we'll individually talk about.
+
+00:01:31.169 --> 00:01:32.060
+So first we have a method,
+
+00:01:32.290 --> 00:01:32.449
+right?
+
+00:01:32.530 --> 00:01:33.729
+So we have get,
+
+00:01:33.770 --> 00:01:34.810
+we want to get
+
+00:01:35.050 --> 00:01:35.679
+a file.
+
+00:01:35.929 --> 00:01:37.250
+Sounds just like what it is.
+
+00:01:37.290 --> 00:01:39.090
+We're asking to receive something.
+
+00:01:39.669 --> 00:01:39.870
+Uh,
+
+00:01:39.979 --> 00:01:40.860
+we have
+
+00:01:41.189 --> 00:01:41.550
+a,
+
+00:01:41.709 --> 00:01:41.879
+uh,
+
+00:01:41.909 --> 00:01:43.540
+we have a path that we're looking to receive.
+
+00:01:43.590 --> 00:01:45.310
+In this case we're using just Slash,
+
+00:01:45.350 --> 00:01:46.429
+which is the home page.
+
+00:01:46.469 --> 00:01:48.179
+We'll get into a bit more of that a bit later.
+
+00:01:48.629 --> 00:01:51.219
+And then what protocol and version are we using?
+
+00:01:51.429 --> 00:01:53.149
+So specifically we're using HTTP.
+
+00:01:53.350 --> 00:01:54.679
+This reference is version 2.
+
+00:01:54.830 --> 00:01:56.469
+We will come back to that a little bit and talk about
+
+00:01:56.469 --> 00:01:59.989
+a few different versions of HTTP and why that might be important.
+
+00:02:00.070 --> 00:02:01.189
+We will get back to that in a second.
+
+00:02:01.709 --> 00:02:01.949
+Uh,
+
+00:02:02.000 --> 00:02:03.909
+and then also we have potentially a whole
+
+00:02:03.909 --> 00:02:07.110
+number of headers separated with their values.
+
+00:02:07.149 --> 00:02:11.870
+Now in a real request there's this is gonna be a long off off the page several headers
+
+00:02:11.870 --> 00:02:14.590
+and several different values for simplicity we're boiling it
+
+00:02:14.590 --> 00:02:16.469
+down to really the host we're looking for.
+
+00:02:16.580 --> 00:02:17.659
+This is certainly required.
+
+00:02:17.989 --> 00:02:21.229
+We want New York Times.com or NYTimes.com.
+
+00:02:21.429 --> 00:02:23.459
+There may be several other header values
+
+00:02:23.790 --> 00:02:27.379
+um that that are all gonna do different things and maybe specify a bit more
+
+00:02:27.590 --> 00:02:29.270
+what we are requesting.
+
+00:02:30.479 --> 00:02:32.389
+So we're gonna send that request over the
+
+00:02:32.389 --> 00:02:34.600
+internet and just to reinforce this concept,
+
+00:02:34.750 --> 00:02:36.419
+all those other protocols we talked about,
+
+00:02:36.429 --> 00:02:37.899
+those are still in play here,
+
+00:02:38.110 --> 00:02:38.229
+right?
+
+00:02:38.270 --> 00:02:39.340
+If we want to know
+
+00:02:39.629 --> 00:02:42.540
+how to send a message to New York Times or NYTimes.com,
+
+00:02:42.949 --> 00:02:46.050
+we need to use DNS to figure out what address we're sending that to.
+
+00:02:46.110 --> 00:02:47.669
+We need to look them up in the phone book,
+
+00:02:47.949 --> 00:02:48.080
+right?
+
+00:02:48.189 --> 00:02:49.620
+Then we need to break that down
+
+00:02:49.790 --> 00:02:53.110
+into into packets and send it out with TCPIP and make
+
+00:02:53.110 --> 00:02:55.699
+sure that it's been acknowledged and they've received our request.
+
+00:02:55.909 --> 00:02:56.229
+We need to.
+
+00:02:56.320 --> 00:02:58.270
+Use routing tools because who knows where in the
+
+00:02:58.270 --> 00:03:00.300
+world and why time might actually be hosted,
+
+00:03:00.469 --> 00:03:00.590
+right?
+
+00:03:00.669 --> 00:03:02.060
+We have to send that data
+
+00:03:02.419 --> 00:03:04.739
+around the world and and to all these different computers
+
+00:03:04.989 --> 00:03:06.949
+to make sure that it receives at its destination.
+
+00:03:07.030 --> 00:03:07.500
+So just
+
+00:03:07.830 --> 00:03:09.570
+remember that all these things that we've talked about,
+
+00:03:09.590 --> 00:03:11.629
+they're still happening behind the scenes they're
+
+00:03:11.629 --> 00:03:13.669
+just slightly lower level those are building blocks
+
+00:03:13.669 --> 00:03:15.870
+that we're we're abstracting away from and we're
+
+00:03:15.870 --> 00:03:17.820
+doing bigger and and more powerful things,
+
+00:03:17.989 --> 00:03:21.989
+but we're still using those core building blocks uh to get through our journey here.
+
+00:03:22.899 --> 00:03:24.699
+So the server is gonna receive our message
+
+00:03:25.070 --> 00:03:27.590
+and it's going to need to do something with it.
+
+00:03:28.209 --> 00:03:29.870
+So the first thing it's gonna do is say,
+
+00:03:29.929 --> 00:03:30.290
+well,
+
+00:03:30.600 --> 00:03:32.429
+what software is this message
+
+00:03:32.840 --> 00:03:33.669
+intended for?
+
+00:03:33.800 --> 00:03:35.760
+Earlier we talked about TCP port numbers,
+
+00:03:35.840 --> 00:03:35.959
+right?
+
+00:03:36.040 --> 00:03:36.050
+And,
+
+00:03:36.060 --> 00:03:38.080
+and how we can have different conversations on the phone
+
+00:03:38.080 --> 00:03:40.469
+so we're not hearing other people on the same line.
+
+00:03:40.719 --> 00:03:41.669
+This is more of the same
+
+00:03:41.919 --> 00:03:44.399
+because we requested an HTTPS website,
+
+00:03:44.409 --> 00:03:47.510
+which is which is an encrypted or secure HTTP website.
+
+00:03:47.719 --> 00:03:49.760
+This likely came over on port 443.
+
+00:03:50.219 --> 00:03:51.409
+So the computer's going to say,
+
+00:03:51.530 --> 00:03:51.600
+Well,
+
+00:03:51.729 --> 00:03:53.120
+I have a request in 443.
+
+00:03:53.209 --> 00:03:57.280
+I'm supposed to forward this to a piece of software called a web server.
+
+00:03:57.409 --> 00:03:59.949
+So it forwards that request along and the web server
+
+00:03:59.949 --> 00:04:02.760
+in turn now receives this entire message and says,
+
+00:04:02.889 --> 00:04:03.080
+Ah,
+
+00:04:03.250 --> 00:04:04.300
+I I have a new message.
+
+00:04:04.449 --> 00:04:06.469
+What am I doing with this data?
+
+00:04:06.729 --> 00:04:09.239
+I see that someone would like to get a specific file,
+
+00:04:09.409 --> 00:04:10.649
+particularly our homepage.
+
+00:04:11.169 --> 00:04:11.290
+Uh,
+
+00:04:11.330 --> 00:04:14.639
+it's important to note there are other request types that we could make.
+
+00:04:15.090 --> 00:04:17.679
+The most common we will see is we're asking to download,
+
+00:04:17.929 --> 00:04:18.050
+right?
+
+00:04:18.090 --> 00:04:19.500
+We just give me your home page,
+
+00:04:19.689 --> 00:04:21.229
+show me the data that you have,
+
+00:04:21.590 --> 00:04:21.610
+uh,
+
+00:04:21.699 --> 00:04:23.729
+but perhaps we want to send information.
+
+00:04:24.050 --> 00:04:26.810
+Say for example you're making an order on some
+
+00:04:26.810 --> 00:04:29.040
+online shopping website and it's time to check out.
+
+00:04:29.250 --> 00:04:30.520
+You'll likely put your address,
+
+00:04:30.649 --> 00:04:30.989
+your name,
+
+00:04:31.090 --> 00:04:31.409
+your address,
+
+00:04:31.489 --> 00:04:32.489
+where you're shipping it to,
+
+00:04:32.649 --> 00:04:34.679
+perhaps payment information like a credit card,
+
+00:04:34.909 --> 00:04:37.889
+and you'll submit that and we're sending that information.
+
+00:04:38.199 --> 00:04:42.120
+To this server ultimately to do something we wish it to do like
+
+00:04:42.399 --> 00:04:45.459
+charge our credit card purchase the the object we're trying to buy,
+
+00:04:45.489 --> 00:04:50.129
+and then put it in the uh in the mail shipping it to us so we can both receive and send and
+
+00:04:50.129 --> 00:04:53.620
+indeed do many other things in HTTP that it would support
+
+00:04:53.620 --> 00:04:56.770
+primarily get is the easiest to talk about because it's simple,
+
+00:04:56.850 --> 00:04:57.010
+right?
+
+00:04:57.050 --> 00:04:58.360
+We're just downloading a file,
+
+00:04:58.530 --> 00:04:59.889
+give me this data.
+
+00:05:01.070 --> 00:05:01.250
+Uh,
+
+00:05:01.350 --> 00:05:02.350
+and then finally,
+
+00:05:03.290 --> 00:05:08.090
+We are going to draft the HTTP response and send that back.
+
+00:05:08.340 --> 00:05:11.850
+So much like the browser needed to put together this text
+
+00:05:12.139 --> 00:05:14.770
+to send off to the web server to interpret,
+
+00:05:15.179 --> 00:05:16.409
+we may have the file,
+
+00:05:16.550 --> 00:05:18.860
+but that file needs to be wrapped in some sort of
+
+00:05:18.860 --> 00:05:20.969
+protocol so the browser knows what to do with it.
+
+00:05:21.020 --> 00:05:24.459
+So it's going to write an HTTP response that might look something like this.
+
+00:05:25.409 --> 00:05:28.439
+We'll still have our HTTP 2 which gives us the version.
+
+00:05:28.729 --> 00:05:28.850
+Uh,
+
+00:05:28.889 --> 00:05:30.179
+we have 200,
+
+00:05:30.290 --> 00:05:31.810
+kind of a strange number to have there,
+
+00:05:31.850 --> 00:05:32.239
+and we'll say,
+
+00:05:32.250 --> 00:05:32.409
+OK,
+
+00:05:32.489 --> 00:05:33.409
+we'll get back to that in a minute.
+
+00:05:34.389 --> 00:05:35.030
+Something like the date,
+
+00:05:35.110 --> 00:05:38.139
+these are other headers and values we have a date like the current date and time
+
+00:05:38.469 --> 00:05:39.550
+and then content type.
+
+00:05:40.320 --> 00:05:43.320
+So here we might have text slash HTML and that what that's
+
+00:05:43.320 --> 00:05:45.639
+doing is it's giving our browser a bit of a hint.
+
+00:05:46.739 --> 00:05:49.090
+Because there's a whole bunch of different files we could request.
+
+00:05:49.260 --> 00:05:51.169
+Think about the type of content that you look at
+
+00:05:51.379 --> 00:05:53.219
+when you're on your web browser.
+
+00:05:53.239 --> 00:05:54.139
+You might watch videos,
+
+00:05:54.219 --> 00:05:55.449
+you might listen to audio,
+
+00:05:55.659 --> 00:05:57.139
+you might be images that you're loading,
+
+00:05:57.149 --> 00:05:57.350
+right?
+
+00:05:57.379 --> 00:06:01.689
+In this case we have an HTML site or a basically a home page that's gonna be rendered.
+
+00:06:01.899 --> 00:06:04.899
+It's possible you could be downloading a PDF or an Excel file or who knows,
+
+00:06:04.979 --> 00:06:06.709
+however many other types of files.
+
+00:06:06.939 --> 00:06:08.379
+So we're going to give the browser a bit of a.
+
+00:06:08.459 --> 00:06:08.899
+Hint
+
+00:06:09.129 --> 00:06:12.489
+saying this is the type of data I'm gonna be sending you
+
+00:06:12.489 --> 00:06:15.489
+so when the browser receives this response it has an idea of
+
+00:06:15.489 --> 00:06:18.199
+what to do with it because the browsers have gotten pretty powerful
+
+00:06:18.199 --> 00:06:22.000
+and they actually know how to delegate what they do based on
+
+00:06:22.120 --> 00:06:23.280
+the type that they're receiving,
+
+00:06:23.290 --> 00:06:23.449
+right?
+
+00:06:23.530 --> 00:06:26.969
+They might try to open that file in Excel for you or maybe render that PDF
+
+00:06:26.969 --> 00:06:30.330
+in a different way or open up uh some other piece of software to render that.
+
+00:06:30.449 --> 00:06:33.479
+PDF for you so we give the browser some hints
+
+00:06:33.479 --> 00:06:36.040
+and just like in the request there are far other
+
+00:06:36.040 --> 00:06:39.639
+headers that aren't mentioned here that give those browser additional
+
+00:06:39.639 --> 00:06:42.750
+hints to give them clues on how they should behave
+
+00:06:42.959 --> 00:06:44.830
+in this continued back and forth
+
+00:06:45.080 --> 00:06:46.030
+uh conversation
+
+00:06:46.199 --> 00:06:49.840
+where machines are speaking to other machines and then finally of course
+
+00:06:49.840 --> 00:06:52.320
+we will send the file itself we requested the home page.
+
+00:06:53.120 --> 00:06:55.239
+Here is the the actual content of the home page.

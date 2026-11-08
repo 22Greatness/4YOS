@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-11-08",
+  "packs": [
+    {
+      "id": "how-computers-work",
+      "title": "How Computers Work",
+      "level": 100,
+      "filename": "how-computers-work.json",
+      "sha256": "5b2b44ca4bb0e37721883029e7d67bc66d8f53a027ff8c2f6c0ca16aafced77d",
+      "bytes": 360127,
+      "lessonsCount": 24,
+      "unitsCount": 5
+    },
+    {
+      "id": "numbers-and-algebra",
+      "title": "Numbers and Algebra",
+      "level": 0,
+      "filename": "numbers-and-algebra.json",
+      "sha256": "6da14486f1f3463b714151fb85073b73483c3c606c67628c2639f09264db68ea",
+      "bytes": 463696,
+      "lessonsCount": 35,
+      "unitsCount": 6
+    },
+    {
+      "id": "sets-logic-proof",
+      "title": "Sets, Logic and Proof",
+      "level": 100,
+      "filename": "sets-logic-proof.json",
+      "sha256": "c2ed16aaf685a606abf26da7937778d100e626aa450d8b70b9f15831a6ec1e92",
+      "bytes": 16211,
+      "lessonsCount": 1,
+      "unitsCount": 1
+    },
+    {
+      "id": "how-to-study",
+      "title": "How to Study",
+      "level": 0,
+      "filename": "how-to-study.json",
+      "sha256": "0ff34b4ff999a472c5852a624d763653d2c8fd1c21be46de7badba2a6786a722",
+      "bytes": 153170,
+      "lessonsCount": 10,
+      "unitsCount": 2
+    },
+    {
+      "id": "programming-1",
+      "title": "Programming 1 (Python)",
+      "level": 0,
+      "filename": "programming-1.json",
+      "sha256": "bae6893f4761759f3c8a2bbcb01a65cd661f682100cb6cb6aa0304f22125bea3",
+      "bytes": 527700,
+      "lessonsCount": 39,
+      "unitsCount": 7
+    },
+    {
+      "id": "describing-data",
+      "title": "Describing Data",
+      "level": 0,
+      "filename": "describing-data.json",
+      "sha256": "7d54976febc15af46124ff31bf1869367a6cb7c07980f9a71ffec37ab6380b1c",
+      "bytes": 327553,
+      "lessonsCount": 27,
+      "unitsCount": 5
+    }
+  ]
+}

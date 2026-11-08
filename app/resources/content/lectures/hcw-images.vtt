@@ -1,0 +1,387 @@
+WEBVTT
+
+00:05:03.900 --> 00:05:08.420
+So now let's transition to graphics,
+what we see in the world of multimedia.
+
+00:05:08.420 --> 00:05:12.320
+Turns out here too there's multiple
+file formats for representing graphics.
+
+00:05:12.320 --> 00:05:13.670
+And what is a graphic?
+
+00:05:13.670 --> 00:05:16.220
+Well, graphic really if
+you think about it is just
+
+00:05:16.220 --> 00:05:20.270
+a whole bunch of dots otherwise
+known as pixels both horizontally
+
+00:05:20.270 --> 00:05:21.050
+and vertically.
+
+00:05:21.050 --> 00:05:24.055
+Indeed most images that you and
+I see on the web, on our phones,
+
+00:05:24.055 --> 00:05:26.180
+on our computers are
+rectangular in nature, though,
+
+00:05:26.180 --> 00:05:29.404
+you can make some of
+the images transparent,
+
+00:05:29.404 --> 00:05:31.070
+so they might appear to be other shapes.
+
+00:05:31.070 --> 00:05:33.500
+But at the end of the day,
+all file formats for images
+
+00:05:33.500 --> 00:05:36.590
+are rectangular in nature,
+and you can think of them
+
+00:05:36.590 --> 00:05:38.690
+as just a grid of pixels or dots.
+
+00:05:38.690 --> 00:05:41.570
+Now in the simplest
+form, each of those dots
+
+00:05:41.570 --> 00:05:45.270
+might just be represented
+by a single bit, a 1 or a 0.
+
+00:05:45.270 --> 00:05:48.220
+So for instance, here if
+you look far enough back,
+
+00:05:48.220 --> 00:05:51.290
+is what appears to be a
+very happy smiley face.
+
+00:05:51.290 --> 00:05:53.110
+But it's pretty simply implemented.
+
+00:05:53.110 --> 00:05:55.670
+If you think of, again,
+this rectangular region
+
+00:05:55.670 --> 00:05:57.960
+as just having a whole
+bunch of dots or pixels,
+
+00:05:57.960 --> 00:06:01.490
+I've pretty much colored in in
+black only those dots necessary
+
+00:06:01.490 --> 00:06:03.620
+to convey the idea of
+a happy face and left
+
+00:06:03.620 --> 00:06:07.440
+in white any of the dots that are
+otherwise part of our background.
+
+00:06:07.440 --> 00:06:09.890
+And you might then
+consider the white pixels
+
+00:06:09.890 --> 00:06:12.350
+to be represented with a
+one, and the black pixels
+
+00:06:12.350 --> 00:06:14.390
+to be represented with
+a zero or vice versa.
+
+00:06:14.390 --> 00:06:17.990
+It doesn't really matter, so long as
+we're consistent in our file format.
+
+00:06:17.990 --> 00:06:20.710
+And so if you take a step back,
+you can, kind of, sort of,
+
+00:06:20.710 --> 00:06:25.160
+but it's really hard to see the same
+image even among those zeros and ones,
+
+00:06:25.160 --> 00:06:29.734
+but that might be the simplest
+mapPNG from binary to an image.
+
+00:06:29.734 --> 00:06:32.150
+You simply have to decide that
+there's some number of bits
+
+00:06:32.150 --> 00:06:34.380
+horizontally, some number
+of bits vertically.
+
+00:06:34.380 --> 00:06:37.160
+And if it's a 1, it's a
+white pixel, and if it's a 0,
+
+00:06:37.160 --> 00:06:40.460
+it's a black pixel or
+equivalently vice versa.
+
+00:06:40.460 --> 00:06:44.379
+But, of course, we don't generally
+use black and white images alone,
+
+00:06:44.379 --> 00:06:46.420
+on the internet, on our
+phones, on our computers.
+
+00:06:46.420 --> 00:06:49.070
+Indeed, the world would be pretty
+boring if it only looked like that.
+
+00:06:49.070 --> 00:06:51.278
+And that's, indeed, how it
+looked way back in the day
+
+00:06:51.278 --> 00:06:54.710
+even before there was digital and
+before we had file formats like this
+
+00:06:54.710 --> 00:06:56.480
+when you just had black and white TV.
+
+00:06:56.480 --> 00:06:59.480
+But that would really
+be similar in spirit
+
+00:06:59.480 --> 00:07:02.660
+to what we're looking at here
+with some gray scales as well.
+
+00:07:02.660 --> 00:07:05.540
+But here let's focus on
+color and the introduction
+
+00:07:05.540 --> 00:07:09.320
+of color in a digital context,
+RGB, red, green, blue.
+
+00:07:09.320 --> 00:07:12.200
+If you've ever heard this acronym,
+and even if you haven't, this
+
+00:07:12.200 --> 00:07:16.130
+represents the three colors that
+can be mixed together really
+
+00:07:16.130 --> 00:07:18.440
+to give us any color that we want--
+
+00:07:18.440 --> 00:07:21.720
+RGB meaning red, green, and blue.
+
+00:07:21.720 --> 00:07:24.019
+So using three different
+values, how much red
+
+00:07:24.019 --> 00:07:26.810
+do you want, how much green do you
+want, how much blue do you want,
+
+00:07:26.810 --> 00:07:31.740
+you can tell a computer to colorize
+each of those dots in a certain way.
+
+00:07:31.740 --> 00:07:35.370
+Now if you have none of these colors,
+you'll actually get a black dot.
+
+00:07:35.370 --> 00:07:38.390
+And if you have all of these colors
+mixed together in equal form,
+
+00:07:38.390 --> 00:07:39.980
+you'll get a white dot.
+
+00:07:39.980 --> 00:07:44.840
+But it's in the grades in between that
+you get all sorts of disparate colors.
+
+00:07:44.840 --> 00:07:46.640
+So let's consider this.
+
+00:07:46.640 --> 00:07:51.350
+Here is three bytes before you, and
+each is a byte, because each of these
+
+00:07:51.350 --> 00:07:54.690
+is 8 bits where, again,
+a bit is just a 0 or a 1.
+
+00:07:54.690 --> 00:07:58.220
+So I have eight bits here, eight
+bits here, and eight bits here.
+
+00:07:58.220 --> 00:08:02.600
+The first byte of bits, first
+eight bits, is, of course, all ones
+
+00:08:02.600 --> 00:08:03.380
+apparently.
+
+00:08:03.380 --> 00:08:08.340
+The second byte is all zeros, and
+the third byte is all zeros as well.
+
+00:08:08.340 --> 00:08:10.400
+So if you view each
+of these bytes, 1, 2,
+
+00:08:10.400 --> 00:08:17.120
+3 as representing how much of a
+certain color red, green, blue, RGB,
+
+00:08:17.120 --> 00:08:20.930
+this appears to be a lot of
+red, because all of these bits
+
+00:08:20.930 --> 00:08:25.070
+are ones, no green and no blue.
+
+00:08:25.070 --> 00:08:30.530
+So are RGB, red, green, blue,
+lots of red, no green, no blue.
+
+00:08:30.530 --> 00:08:34.640
+And so indeed this is how
+a computer would typically
+
+00:08:34.640 --> 00:08:39.650
+using eight bits per color or 24
+bits in total, 8 plus 8 plus 8,
+
+00:08:39.650 --> 00:08:42.500
+would represent the
+number we know as red.
+
+00:08:42.500 --> 00:08:44.810
+So that is to say if you
+think of this whole screen
+
+00:08:44.810 --> 00:08:46.790
+as just one dot-- it's
+not quite a square.
+
+00:08:46.790 --> 00:08:48.540
+It's a rectangle in
+this case-- but if you
+
+00:08:48.540 --> 00:08:50.390
+think of this whole
+screen as just one dot,
+
+00:08:50.390 --> 00:08:53.150
+if a computer wanted
+to make this dot red,
+
+00:08:53.150 --> 00:08:57.380
+it would store a pattern of 24 bits,
+the first eight of which are all ones,
+
+00:08:57.380 --> 00:09:00.140
+the second eight of which are
+all zeros, and the third of which
+
+00:09:00.140 --> 00:09:01.406
+are all zeros as well.
+
+00:09:01.406 --> 00:09:03.530
+And it will interpret the
+first of those eight bits
+
+00:09:03.530 --> 00:09:07.700
+as meaning give me a lot of red,
+give me no green, give me no blue,
+
+00:09:07.700 --> 00:09:12.140
+and thus you get a whole screen full
+of red or a whole pixel full of red.
+
+00:09:12.140 --> 00:09:13.700
+What if we change it up?
+
+00:09:13.700 --> 00:09:19.820
+What if we have a zero byte, a byte with
+all ones, and then another zero byte.
+
+00:09:19.820 --> 00:09:24.830
+Thereby, making the red zero, the
+green all ones, and the blue all zeros.
+
+00:09:24.830 --> 00:09:28.250
+Well, indeed, we'll get a screen
+filled with all green using
+
+00:09:28.250 --> 00:09:29.930
+that encoding of 24 bits.
+
+00:09:29.930 --> 00:09:33.890
+And you might guess in the end here, if
+we have zeros and zeros and then ones,
+
+00:09:33.890 --> 00:09:36.500
+RGB, this time we're going to get blue.
+
+00:09:36.500 --> 00:09:39.020
+That's how a computer
+using 24 bits would
+
+00:09:39.020 --> 00:09:42.110
+represent a dot that's entirely blue.
+
+00:09:42.110 --> 00:09:44.240
+Meanwhile, if you
+wanted represent black,
+
+00:09:44.240 --> 00:09:47.450
+you would use all zeros for
+each of the R, G and B values,
+
+00:09:47.450 --> 00:09:50.420
+and if you wanted to represent white,
+you would use all ones for each
+
+00:09:50.420 --> 00:09:52.520
+of the R,G, and B values.
+
+00:09:52.520 --> 00:09:55.970
+And you can get any number of
+colors in between these extremes
+
+00:09:55.970 --> 00:09:58.130
+in any number of variations
+of red, green, and blue
+
+00:09:58.130 --> 00:10:01.830
+by just mixing those colors
+together in different quantities.
+
+00:10:01.830 --> 00:10:04.320
+Now it turns out when we talk
+about graphical file formats,
+
+00:10:04.320 --> 00:10:08.090
+we don't typically talk in terms
+of or think in terms of binary.
+
+00:10:08.090 --> 00:10:10.460
+We rather use something
+called hexadecimal.
+
+00:10:10.460 --> 00:10:13.710
+Whereas binary just has
+two digits, zero and one

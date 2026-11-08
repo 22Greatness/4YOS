@@ -1,0 +1,170 @@
+WEBVTT
+
+00:10:10.460 --> 00:10:13.710
+Whereas binary just has
+two digits, zero and one
+
+00:10:13.710 --> 00:10:17.060
+and whereas recall decimal has
+10 digits zero through nine,
+
+00:10:17.060 --> 00:10:18.960
+hexadecimal is a little different.
+
+00:10:18.960 --> 00:10:21.080
+It has 16 possible digits.
+
+00:10:21.080 --> 00:10:23.900
+And it's a little weird, but it's
+at least pretty straightforward.
+
+00:10:23.900 --> 00:10:27.020
+Those 16 digits are zero
+through nine, and then
+
+00:10:27.020 --> 00:10:35.210
+A through F. In other words, 0, 1, 2,
+3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
+
+00:10:35.210 --> 00:10:38.900
+And so, of course, zero is the
+smallest number we can represent,
+
+00:10:38.900 --> 00:10:42.050
+and 15 is going to be the
+largest number we can represent,
+
+00:10:42.050 --> 00:10:44.900
+which is to say that F represents a 15.
+
+00:10:44.900 --> 00:10:46.790
+So, in fact, let's consider an example.
+
+00:10:46.790 --> 00:10:49.482
+Here is a pattern of eight
+bits, all of which are one.
+
+00:10:49.482 --> 00:10:52.190
+Let me go ahead and add a little
+bit of space to these eight bits
+
+00:10:52.190 --> 00:10:54.650
+just to separate them
+into two groups of four,
+
+00:10:54.650 --> 00:10:57.710
+because it turns out one of the
+nice features of hexadecimal
+
+00:10:57.710 --> 00:11:02.300
+mathematically is that each
+hexadecimal digit zero through F
+
+00:11:02.300 --> 00:11:04.910
+represents in total, four bits.
+
+00:11:04.910 --> 00:11:08.230
+Which is to say that we can take
+a number in binary like this,
+
+00:11:08.230 --> 00:11:11.510
+look at it as two halves,
+one half of a byte followed
+
+00:11:11.510 --> 00:11:15.170
+by another half of a byte, and
+use one hexadecimal digit instead
+
+00:11:15.170 --> 00:11:18.140
+of four binary digits to
+represent the first four bits.
+
+00:11:18.140 --> 00:11:22.490
+And then one other hexadecimal digit
+to represent the other four bits.
+
+00:11:22.490 --> 00:11:26.270
+So we can take something that takes
+eight symbols represent and widdle it
+
+00:11:26.270 --> 00:11:28.730
+down to just two, which
+is pretty convenient.
+
+00:11:28.730 --> 00:11:32.190
+And so, in fact, it turns
+out that in hexadecimal
+
+00:11:32.190 --> 00:11:35.810
+if we had all zeros, in
+hexadecimal that would just be 0.
+
+00:11:35.810 --> 00:11:40.656
+But if we have all ones, 1, 1, 1
+and we convert that to hexadecimal,
+
+00:11:40.656 --> 00:11:43.280
+that's going to be if this is
+the one place and the twos places
+
+00:11:43.280 --> 00:11:45.280
+and the fours place and
+the eights place, that's
+
+00:11:45.280 --> 00:11:47.210
+going to be the number
+15, otherwise known
+
+00:11:47.210 --> 00:11:53.030
+in hexadecimal as F. Which is to
+say if you have a byte of bits,
+
+00:11:53.030 --> 00:11:57.890
+8 bits, all of which are ones,
+you can think of that same byte
+
+00:11:57.890 --> 00:12:02.570
+as being two hexadecimal digits
+FF, as opposed to thinking of it
+
+00:12:02.570 --> 00:12:07.919
+as 1, 1,1,1, 1, 1, 1, 1, it's just FF.
+
+00:12:07.919 --> 00:12:09.710
+So it's a more succinct
+way of representing
+
+00:12:09.710 --> 00:12:11.670
+the exact same information.
+
+00:12:11.670 --> 00:12:16.040
+And so accordingly, if you want to think
+about red a little more succinctly,
+
+00:12:16.040 --> 00:12:19.100
+you don't have to think about it in
+terms of eight ones and eights zeros
+
+00:12:19.100 --> 00:12:23.010
+and eight zeros, you can think
+of it in terms of FF, 0, 0, 0,
+
+00:12:23.010 --> 00:12:28.030
+0 just because it's more succinct--
+similarly for green, 0,0 F, F, 0,
+
+00:12:28.030 --> 00:12:34.700
+0 and for blue 0,0, 0,0, F,F. It's
+just a more succinct way of explaining
+
+00:12:34.700 --> 00:12:38.180
+oneself, and indeed a lot of graphical
+editing programs like Photoshop being
+
+00:12:38.180 --> 00:12:41.510
+one of the most popular actually
+use this notation certainly instead
+
+00:12:41.510 --> 00:12:47.130
+of binary and also instead often
+of decimal just by convention.

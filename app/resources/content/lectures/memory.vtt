@@ -1,0 +1,357 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.250
+so we can do actual work.
+
+00:00:00.250 --> 00:00:04.190
+And one of those things is called
+memory or random access memory.
+
+00:00:04.190 --> 00:00:08.135
+And random access memory
+looks, physically, like this.
+
+00:00:08.135 --> 00:00:14.150
+This is a chip that you might slide into
+a little slot inside of your computer
+
+00:00:14.150 --> 00:00:18.050
+specifically on the so-called
+motherboard, again, a big greenish
+
+00:00:18.050 --> 00:00:20.779
+board into which all of your
+computer's components connect.
+
+00:00:20.779 --> 00:00:23.570
+And there's usually a little divot
+here, a little bump to make sure
+
+00:00:23.570 --> 00:00:26.611
+you put it in the right way-- instead
+this way, instead of, for instance,
+
+00:00:26.611 --> 00:00:27.260
+that way.
+
+00:00:27.260 --> 00:00:30.440
+And then on this green circuit
+board are all these various chips
+
+00:00:30.440 --> 00:00:32.510
+that actually store your data.
+
+00:00:32.510 --> 00:00:37.700
+Specifically, they store your data in
+a volatile way, only when the power is
+
+00:00:37.700 --> 00:00:40.190
+on, when your laptop has
+battery and is running
+
+00:00:40.190 --> 00:00:42.740
+or when your laptop is
+plugged in and is running.
+
+00:00:42.740 --> 00:00:45.260
+Which is to say, when you
+double-click an icon on the screen
+
+00:00:45.260 --> 00:00:49.220
+or run some program, open
+some file, those files
+
+00:00:49.220 --> 00:00:54.050
+are loaded into the little black
+chips that you see on this stick here.
+
+00:00:54.050 --> 00:00:56.750
+They're loaded into RAM
+or Random Access Memory.
+
+00:00:56.750 --> 00:00:58.370
+And this memory is pretty fast.
+
+00:00:58.370 --> 00:01:00.920
+And it is where those
+files and programs live,
+
+00:01:00.920 --> 00:01:04.250
+so long as you are using them
+at a given moment in time.
+
+00:01:04.250 --> 00:01:07.370
+Now other devices have slightly
+different looking sticks of RAM.
+
+00:01:07.370 --> 00:01:09.500
+This is a smaller stick
+here that's actually
+
+00:01:09.500 --> 00:01:13.550
+found, typically, in laptops or certain
+desktop models, but it's the same idea.
+
+00:01:13.550 --> 00:01:15.510
+It's simply a different form factor.
+
+00:01:15.510 --> 00:01:18.020
+Now you can actually
+see in your Mac or PC
+
+00:01:18.020 --> 00:01:20.169
+sometimes exactly how much
+RAM you have, especially
+
+00:01:20.169 --> 00:01:22.460
+if you bought the computer
+without knowing this concept
+
+00:01:22.460 --> 00:01:24.930
+or were given the computer
+and didn't think to ask.
+
+00:01:24.930 --> 00:01:28.910
+In fact, on Windows, if you open
+up the so-called Task Manager
+
+00:01:28.910 --> 00:01:33.110
+and look at the CPU tab, you might
+see a little something like this.
+
+00:01:33.110 --> 00:01:36.380
+You'll see one, a nice little chart
+that shows you what your CPU has
+
+00:01:36.380 --> 00:01:38.120
+been doing over the past few seconds.
+
+00:01:38.120 --> 00:01:39.950
+And the higher these peaks
+are, the busier it was.
+
+00:01:39.950 --> 00:01:42.033
+Maybe you double-clicked
+an icon or played a video
+
+00:01:42.033 --> 00:01:44.570
+or sent a really big email
+or something like that.
+
+00:01:44.570 --> 00:01:47.990
+But more interesting, down
+here, is the speed of your CPU.
+
+00:01:47.990 --> 00:01:50.600
+This one is 1.94 gigahertz.
+
+00:01:50.600 --> 00:01:54.800
+And a gigahertz means 1
+billion things per second.
+
+00:01:54.800 --> 00:01:59.360
+So that's 1.94 gigahertz
+means that this computer, this CPU
+
+00:01:59.360 --> 00:02:03.590
+can do 1.94 billion things per second--
+
+00:02:03.590 --> 00:02:05.330
+additions, subtractions,
+multiplications,
+
+00:02:05.330 --> 00:02:08.040
+printing to the screen,
+any number of other things.
+
+00:02:08.040 --> 00:02:12.500
+But if we look, odds are this is
+marketed, frankly, as 2 gigahertz,
+
+00:02:12.500 --> 00:02:15.020
+and maybe it has burst technology
+whereby it can actually
+
+00:02:15.020 --> 00:02:18.140
+go even a little faster,
+maximum speed 2.81
+
+00:02:18.140 --> 00:02:23.242
+gigahertz by maybe using a little
+more energy for some amount of time
+
+00:02:23.242 --> 00:02:24.950
+and therefore generating
+a bit more heat.
+
+00:02:24.950 --> 00:02:28.730
+But you'll see that there's only one
+socket in the computer from which I
+
+00:02:28.730 --> 00:02:31.560
+took this screenshot from Windows,
+which means there's one CPU.
+
+00:02:31.560 --> 00:02:35.720
+But that CPU has two cores, which means
+that the computer can do literally
+
+00:02:35.720 --> 00:02:39.987
+two things at once because it has
+really two brains inside of that device
+
+00:02:39.987 --> 00:02:41.570
+that we saw a picture of a moment ago.
+
+00:02:41.570 --> 00:02:43.880
+But logically, it actually seems four.
+
+00:02:43.880 --> 00:02:49.160
+So this particular windows computer
+has a CPU with two cores, each of which
+
+00:02:49.160 --> 00:02:51.650
+supports that technology
+called hyperthreading, which
+
+00:02:51.650 --> 00:02:56.120
+means that each of those cores will
+present itself to the Windows operating
+
+00:02:56.120 --> 00:02:57.590
+system as though it's two.
+
+00:02:57.590 --> 00:03:00.770
+Which is to say each core will
+do two things simultaneously,
+
+00:03:00.770 --> 00:03:05.120
+thereby giving me four logical
+processors or, really, the ability
+
+00:03:05.120 --> 00:03:07.410
+to do 4 total things at once.
+
+00:03:07.410 --> 00:03:10.220
+So perhaps lower level detail
+than is perhaps germane,
+
+00:03:10.220 --> 00:03:13.550
+but these are the kinds of things
+that you end up paying for in a store
+
+00:03:13.550 --> 00:03:15.444
+or when you buy a computer online.
+
+00:03:15.444 --> 00:03:18.110
+This is what distinguishes a less
+expensive computer from a more
+
+00:03:18.110 --> 00:03:22.400
+expensive computer is just
+how fast the CPU or CPUs are
+
+00:03:22.400 --> 00:03:25.460
+and just how many cores
+the CPU has and, therefore,
+
+00:03:25.460 --> 00:03:29.480
+just how much work you can get
+done at a given moment in time
+
+00:03:29.480 --> 00:03:31.930
+or just how quickly you
+can work more generally.
+
+00:03:31.930 --> 00:03:35.100
+Now, in a Mac, if you open
+up your System Profiler,
+
+00:03:35.100 --> 00:03:38.310
+you'll see a different kind of
+interface, but similar information.
+
+00:03:38.310 --> 00:03:40.560
+This is taken here from a MacBook Pro.
+
+00:03:40.560 --> 00:03:45.750
+You can see that this CPU
+is 3.1 gigahertz, so faster,
+
+00:03:45.750 --> 00:03:50.010
+but it has one processor,
+total number of cores is two.
+
+00:03:50.010 --> 00:03:54.240
+And so, here, we see no mention of
+hyperthreading, which generally windows
+
+00:03:54.240 --> 00:03:58.560
+is a bit more detailed on, but this does
+mean that this CPU is pretty darn fast,
+
+00:03:58.560 --> 00:04:00.990
+3.1 billion things per second.
+
+00:04:00.990 --> 00:04:05.970
+And it actually has two cores, so it
+can do at least two things at once.
+
+00:04:05.970 --> 00:04:06.570
+All right.
+
+00:04:06.570 --> 00:04:10.170
+So that's my CPU, which does all
+the thinking and all of the work.
+
+00:04:10.170 --> 00:04:13.620
+That's RAM or random access memory
+where all of my data and programs
+
+00:04:13.620 --> 00:04:16.690
+are stored while I am using them.
+
+00:04:16.690 --> 00:04:18.550
+So what else do I need?
+
+00:04:18.550 --> 00:04:22.200
+Well, where are those programs and
+files stored when the power is not on
+
+00:04:22.200 --> 00:04:26.800
+or when my battery is dead or when
+my computer is not even plugged in.
+
+00:04:26.800 --> 00:04:30.570
+Now, odds are, if your computer is like
+mine, you don't lose all of your files
+
+00:04:30.570 --> 00:04:32.880
+and all of your programs just
+because your battery dies
+
+00:04:32.880 --> 00:04:35.505
+or you move a computer, and
+therefore, unplug it from the wall.
+
+00:04:35.505 --> 00:04:37.320
+It would not be a very useful device.
+
+00:04:37.320 --> 00:04:41.850
+Computers do have nonvolatile
+memory that sticks around
+
+00:04:41.850 --> 00:04:44.910
+even when the power is lost, but
+it uses a different technology
+
+00:04:44.910 --> 00:04:46.350
+than RAM for that.
+
+00:04:46.350 --> 00:04:50.160
+It tends to use a disk or a
+hard disk, as in this case.
+
+00:04:50.160 --> 00:04:53.000
+So this is a device that a PC desktop
+or Mac desktop might have inside of it.

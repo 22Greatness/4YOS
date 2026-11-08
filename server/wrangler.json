@@ -1,0 +1,13 @@
+{
+  "name": "4yos-server",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "4yos-db",
+      "database_id": "placeholder-d1-id"
+    }
+  ]
+}

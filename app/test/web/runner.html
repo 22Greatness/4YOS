@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>4YOS Web Worker Core Test</title>
+</head>
+<body>
+  <h1>4YOS Web Worker Core Runner</h1>
+  <div id="status">Running...</div>
+  <script type="module">
+    import { WebCoreClient } from '/src/web/client.js';
+
+    window.runCoreTests = async function() {
+      const logs = [];
+      const log = (msg) => logs.push(msg);
+
+      try {
+        log('Starting web worker...');
+        const worker = new Worker('/src/web/worker.js', { type: 'module' });
+        const os4 = new WebCoreClient(worker);
+
+        log('Initializing worker database...');
+        const init = await os4.call('init', 'memory');
+        if (!init.ready) throw new Error('Worker failed to initialize.');
+
+        log('Checking status...');
+        const status = await os4.call('status');
+        if (!status.ready) throw new Error('Status not ready.');
+
+        log('Testing profile and settings...');
+        await os4.call('setSetting', 'profile', { school: 'UNIPORT', programme: 'Computer Science' });
+        const profile = await os4.call('profile');
+        if (profile.school !== 'UNIPORT' || profile.programme !== 'Computer Science') {
+          throw new Error('Profile mismatch: ' + JSON.stringify(profile));
+        }
+
+        await os4.call('preference', 'darkMode', true);
+        const dark = await os4.call('preference', 'darkMode');
+        if (dark !== true) throw new Error('Preference mismatch: ' + dark);
+
+        await os4.call('normalDay', 50);
+        const day = await os4.call('normalDay');
+        if (day !== 50) throw new Error('Normal day mismatch: ' + day);
+
+        log('Testing lesson progress and drafts...');
+        const sess = await os4.call('start', 'na-negative-numbers');
+        if (sess.session_id !== 'na-negative-numbers') throw new Error('Session id mismatch');
+
+        await os4.call('step', 'na-negative-numbers', 3);
+        await os4.call('position', 'na-negative-numbers', 150);
+        await os4.call('readingPart', 'na-negative-numbers', 2);
+
+        await os4.call('saveDraft', 'na-negative-numbers', 'y = 10', 'print(10)');
+        const draft = await os4.call('draft', 'na-negative-numbers');
+        if (draft.work !== 'y = 10' || draft.code !== 'print(10)') {
+          throw new Error('Draft mismatch: ' + JSON.stringify(draft));
+        }
+
+        log('Testing practice checks...');
+        const pack = await fetch('../../resources/packs/numbers-and-algebra.json').then(response => response.json());
+        await os4.call('loadPack', pack);
+        const check = await os4.call('check', 'na-place-value', '3000');
+        if (!check.passed) throw new Error('Check failed');
+
+        log('Testing assessments and grading (40% exam pass, 80% unit test pass)...');
+        const unit1 = await os4.call('assessmentSubmit', 'na-unit-1', 85);
+        if (!unit1.passed || unit1.grade.letter !== 'A') throw new Error('Unit 1 scoring failed');
+
+        const examFail = await os4.call('assessmentSubmit', 'na-exam', 35);
+        if (examFail.passed) throw new Error('Exam should have failed at 35%');
+
+        const examPass = await os4.call('assessmentSubmit', 'na-exam', 42);
+        if (!examPass.passed || examPass.grade.letter !== 'E') {
+          throw new Error('Exam should pass at 42% (Grade E)');
+        }
+
+        const attempts = await os4.call('attempts');
+        if (attempts.length !== 3) throw new Error('Expected 3 attempts, got ' + attempts.length);
+
+        log('Testing goals and flashcards...');
+        const goalId = await os4.call('addGoal', 'career', 'Complete Software Degree');
+        const stepId = await os4.call('addGoalStep', goalId, 'Finish Stage 1', 45);
+        await os4.call('toggleGoalStep', stepId, true);
+
+        const goals = await os4.call('goals');
+        if (goals.length !== 1 || !goals[0].steps[0].done_at) throw new Error('Goals step failed');
+
+        const cardId = await os4.call('addCard', 'na-negative-numbers', 'What is -5 * 3?', '-15');
+        await os4.call('rate', cardId, 3); // Good
+
+        log('Testing backup...');
+        const backup = await os4.call('backup');
+        if (!backup.snapshot || backup.format !== 2) throw new Error('Backup failed');
+
+        log('All core worker tests passed successfully!');
+        document.getElementById('status').innerText = 'PASSED';
+        return { ok: true, logs };
+      } catch (err) {
+        log('ERROR: ' + err.message);
+        document.getElementById('status').innerText = 'FAILED: ' + err.message;
+        return { ok: false, error: err.message, logs };
+      }
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+WEBVTT
+
+00:16:17.700 --> 00:16:21.000
+Now what is indeed using
+these patterns of bits?
+
+00:16:21.000 --> 00:16:24.240
+And what is a computer actually
+doing at the end of the day?
+
+00:16:24.240 --> 00:16:28.200
+Well, for that, we need to take a
+look under the hood, so to speak.
+
+00:16:28.200 --> 00:16:31.470
+This is what Intel inside means.
+
+00:16:31.470 --> 00:16:37.680
+If your Mac or your PC
+comes with an Intel Inside,
+
+00:16:37.680 --> 00:16:41.360
+as goes the marketing slogan, that means
+that your computer has inside of it
+
+00:16:41.360 --> 00:16:46.216
+a CPU, a Central Processing Unit that
+looks a little something like this.
+
+00:16:46.216 --> 00:16:47.340
+It's a pretty small device.
+
+00:16:47.340 --> 00:16:48.705
+It's not quite as big as this.
+
+00:16:48.705 --> 00:16:50.159
+This, of course, is not to scale.
+
+00:16:50.159 --> 00:16:52.619
+It wouldn't fit in your
+actual laptop or desktop.
+
+00:16:52.619 --> 00:16:54.000
+But what you see is two sides.
+
+00:16:54.000 --> 00:16:56.444
+This is just a mental case
+and a nice big logo there.
+
+00:16:56.444 --> 00:16:58.860
+And then, if you flip this
+around, you see the other side,
+
+00:16:58.860 --> 00:17:01.740
+which generally has a
+whole bunch of golden pins
+
+00:17:01.740 --> 00:17:05.879
+that actually interconnect to a
+device inside of the computer.
+
+00:17:05.879 --> 00:17:08.010
+And now what is that device?
+
+00:17:08.010 --> 00:17:11.419
+Well, that device, we'll soon see,
+is something called the motherboard.
+
+00:17:11.419 --> 00:17:14.490
+A motherboard is a circuit
+board, so a big piece
+
+00:17:14.490 --> 00:17:17.910
+of silicon or plastic-like
+material that has
+
+00:17:17.910 --> 00:17:20.640
+a lot of lines running
+back and forth on it,
+
+00:17:20.640 --> 00:17:23.880
+and often has sockets, essentially,
+a bunch of tiny little holes
+
+00:17:23.880 --> 00:17:28.890
+into which devices like this fit so that
+you can put this inside of a computer
+
+00:17:28.890 --> 00:17:31.110
+and actually have it
+clamped down on something.
+
+00:17:31.110 --> 00:17:32.970
+Now what does it mean to be a CPU?
+
+00:17:32.970 --> 00:17:34.846
+Well, the CPU is the
+brains of your computer.
+
+00:17:34.846 --> 00:17:36.553
+It's the thing in your
+computer that does
+
+00:17:36.553 --> 00:17:38.100
+all of the work, all of the thinking.
+
+00:17:38.100 --> 00:17:40.230
+Now what kind of thinking
+does a computer need to do?
+
+00:17:40.230 --> 00:17:41.850
+Well, if you're feeding
+it all of these numbers,
+
+00:17:41.850 --> 00:17:43.710
+and you're feeding it
+all of these letters,
+
+00:17:43.710 --> 00:17:46.500
+you want to maybe perform
+math on those numbers.
+
+00:17:46.500 --> 00:17:49.096
+You might want to display
+those letters on the screen.
+
+00:17:49.096 --> 00:17:50.970
+You might want to add
+or delete those letters
+
+00:17:50.970 --> 00:17:53.640
+if the user is using a word
+processor and typing new characters
+
+00:17:53.640 --> 00:17:54.570
+or hitting delete.
+
+00:17:54.570 --> 00:17:58.320
+And so a computer needs to do all of
+that thinking and work for the human.
+
+00:17:58.320 --> 00:18:01.740
+And the peace inside of the
+computer that does most of that work
+
+00:18:01.740 --> 00:18:05.520
+is, indeed, this device
+here called the CPU.
+
+00:18:05.520 --> 00:18:10.020
+Now, it turns out, that CPUs today
+are actually getting pretty fancy.
+
+00:18:10.020 --> 00:18:14.990
+And inside of a CPU, typically,
+is one or more cores, so to speak.
+
+00:18:14.990 --> 00:18:17.640
+And a core is really
+what's doing the work.
+
+00:18:17.640 --> 00:18:21.090
+And it is the device inside
+of this device that actually
+
+00:18:21.090 --> 00:18:24.060
+can do addition, and subtraction,
+and multiplication, and division,
+
+00:18:24.060 --> 00:18:27.030
+and other operations still
+loading information from memory,
+
+00:18:27.030 --> 00:18:28.770
+saving information to memory.
+
+00:18:28.770 --> 00:18:33.570
+And so a CPU like this might have
+one, or two, or four or more cores,
+
+00:18:33.570 --> 00:18:38.110
+which means it can do one, or two,
+or four or more things at a time.
+
+00:18:38.110 --> 00:18:40.560
+And that's great because,
+these days on my Mac or my PC,
+
+00:18:40.560 --> 00:18:42.420
+I might double-click a
+whole bunch of icons.
+
+00:18:42.420 --> 00:18:43.980
+I might be running multiple programs.
+
+00:18:43.980 --> 00:18:45.720
+I might be chatting
+with a friend over here.
+
+00:18:45.720 --> 00:18:47.553
+I might be working on
+my homework over here.
+
+00:18:47.553 --> 00:18:50.940
+And so I might have a lot of programs
+and a lot of files open simultaneously.
+
+00:18:50.940 --> 00:18:55.650
+And thanks to multiple cores inside
+of a CPU, can each of those programs
+
+00:18:55.650 --> 00:18:57.564
+continue running in parallel.
+
+00:18:57.564 --> 00:18:59.480
+Maybe one is printing
+something to my printer.
+
+00:18:59.480 --> 00:19:01.380
+Or maybe one is playing back a video.
+
+00:19:01.380 --> 00:19:03.090
+Maybe one is spell-checking a file.
+
+00:19:03.090 --> 00:19:07.480
+Any number of operations can
+literally be happening simultaneously.
+
+00:19:07.480 --> 00:19:10.620
+Now moreover, it turns out
+that the fanciest of use today,
+
+00:19:10.620 --> 00:19:14.250
+from Intel especially, also support
+something called hyperthreading,
+
+00:19:14.250 --> 00:19:17.040
+which means you might just
+have one CPU or one core,
+
+00:19:17.040 --> 00:19:21.270
+but thanks to some technology
+built into the CPU itself,
+
+00:19:21.270 --> 00:19:24.960
+it will present itself to the
+computer, to the operating system,
+
+00:19:24.960 --> 00:19:27.900
+Mac OS or Windows--
+more on those in a bit--
+
+00:19:27.900 --> 00:19:31.200
+as though it's actually
+two CPUs or two cores.
+
+00:19:31.200 --> 00:19:35.100
+And so, thanks to technology,
+can your computer actually
+
+00:19:35.100 --> 00:19:38.290
+think it has even more computational
+power than it actually has,
+
+00:19:38.290 --> 00:19:41.170
+thereby allowing it to
+take advantage of downtime
+
+00:19:41.170 --> 00:19:44.500
+or slow running programs
+that might still allow you
+
+00:19:44.500 --> 00:19:47.290
+to run multiple things simultaneously.
+
+00:19:47.290 --> 00:19:49.690
+But we'll come back
+to that in just a bit.
+
+00:19:49.690 --> 00:19:54.010
+Now, not all devices have just a
+CPU connected to a motherboard.
+
+00:19:54.010 --> 00:20:00.310
+Some devices, instead, have a CPU and
+more all interconnected all at once.
+
+00:20:00.310 --> 00:20:02.830
+And these things are generally
+known as systems on a chip.
+
+00:20:02.830 --> 00:20:06.790
+And they're especially popular in
+things like tablets or iPads these days,
+
+00:20:06.790 --> 00:20:10.720
+game consoles like Xboxes or even
+things like the Raspberry Pi,
+
+00:20:10.720 --> 00:20:14.170
+which is a very small computer
+that looks pretty much like this.
+
+00:20:14.170 --> 00:20:17.080
+Also not to scale, this thing
+could fit in the palm of my hand.
+
+00:20:17.080 --> 00:20:20.530
+And this has, not only one of
+these silicon circuit boards--
+
+00:20:20.530 --> 00:20:24.520
+generally green, and you'll see
+there's very fine lines or traces that
+
+00:20:24.520 --> 00:20:26.680
+interconnect all of the
+chips and technology
+
+00:20:26.680 --> 00:20:28.870
+that's plugged into this
+thing-- and it also has,
+
+00:20:28.870 --> 00:20:30.350
+well, first and foremost, no case.
+
+00:20:30.350 --> 00:20:33.224
+There's no pretty plastic case that
+protects all of these components.
+
+00:20:33.224 --> 00:20:34.990
+It really is just a
+raw piece of hardware
+
+00:20:34.990 --> 00:20:39.670
+that computer technophiles like
+to use to build their own machines
+
+00:20:39.670 --> 00:20:41.530
+and programs.
+
+00:20:41.530 --> 00:20:43.270
+But it has a whole bunch of ports--
+
+00:20:43.270 --> 00:20:45.490
+as we'll return to in a
+bit-- a whole bunch of places
+
+00:20:45.490 --> 00:20:47.750
+you can connect other devices.
+
+00:20:47.750 --> 00:20:49.780
+But these systems on a
+chip all come together.
+
+00:20:49.780 --> 00:20:54.190
+And they do many things beyond
+just the CPU's task alone.

@@ -1,0 +1,317 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.640
+So in programming, there's
+three sort of simple ways
+
+00:00:02.640 --> 00:00:05.850
+that you can add control
+flow to your programs.
+
+00:00:05.850 --> 00:00:08.400
+And that's making one
+decision and choosing
+
+00:00:08.400 --> 00:00:12.910
+whether to execute something
+or execute something else.
+
+00:00:12.910 --> 00:00:16.740
+The first is a simple if.
+
+00:00:16.740 --> 00:00:19.500
+And given a program
+that just linearly
+
+00:00:19.500 --> 00:00:22.410
+has statements
+that get executed,
+
+00:00:22.410 --> 00:00:26.570
+whenever I reach
+an if statement,
+
+00:00:26.570 --> 00:00:28.867
+you're going to
+check the condition.
+
+00:00:28.867 --> 00:00:30.450
+The condition is
+going to be something
+
+00:00:30.450 --> 00:00:33.625
+that's going to get evaluated
+to either true or false.
+
+00:00:36.620 --> 00:00:40.060
+So I've reached
+the condition here.
+
+00:00:40.060 --> 00:00:41.750
+And if the condition
+is true, then I'm
+
+00:00:41.750 --> 00:00:46.430
+going to additionally execute
+this extra set of expressions.
+
+00:00:46.430 --> 00:00:48.080
+But if the condition
+is false, then I'm
+
+00:00:48.080 --> 00:00:50.510
+just going to keep going
+through the program
+
+00:00:50.510 --> 00:00:52.842
+and not execute that
+extra set of instructions.
+
+00:00:56.510 --> 00:00:59.400
+How does Python know which
+instructions to execute?
+
+00:00:59.400 --> 00:01:03.470
+They're going to be inside
+this what we call code block.
+
+00:01:03.470 --> 00:01:06.609
+And the code block is
+denoted by indentation.
+
+00:01:06.609 --> 00:01:08.150
+So it's going to be
+everything that's
+
+00:01:08.150 --> 00:01:12.970
+indented is part of
+that if code block.
+
+00:01:12.970 --> 00:01:16.420
+Typically, four
+spaces is indentation.
+
+00:01:16.420 --> 00:01:17.440
+OK.
+
+00:01:17.440 --> 00:01:21.890
+So that's how you
+write code that
+
+00:01:21.890 --> 00:01:25.870
+decides whether to execute
+this extra thing or not.
+
+00:01:25.870 --> 00:01:29.330
+Now let's say I don't just
+want to execute an extra thing,
+
+00:01:29.330 --> 00:01:32.420
+I want to reach a
+point where I say,
+
+00:01:32.420 --> 00:01:37.430
+I'll either go down this path
+or I'll do something else.
+
+00:01:37.430 --> 00:01:42.900
+That's this right here.
+
+00:01:42.900 --> 00:01:49.230
+So this if else construct
+says this is my code,
+
+00:01:49.230 --> 00:01:52.020
+I've reached my
+decision point here,
+
+00:01:52.020 --> 00:01:56.980
+if the condition
+inside the if is true,
+
+00:01:56.980 --> 00:02:00.150
+then I'm going to execute maybe
+this set of statements here.
+
+00:02:03.670 --> 00:02:05.810
+But if the condition
+is not true,
+
+00:02:05.810 --> 00:02:08.780
+then I'm not going to execute
+that set of statements,
+
+00:02:08.780 --> 00:02:15.710
+and instead I'm going to
+execute under whatever else is.
+
+00:02:15.710 --> 00:02:17.320
+So using this
+construct, I'm either
+
+00:02:17.320 --> 00:02:19.810
+going to do one set of
+expressions or the other,
+
+00:02:19.810 --> 00:02:21.790
+but never both.
+
+00:02:21.790 --> 00:02:23.630
+And after I've executed
+one or the other,
+
+00:02:23.630 --> 00:02:25.985
+I'm going to continue on with
+just the regular execution
+
+00:02:25.985 --> 00:02:26.610
+of the program.
+
+00:02:34.930 --> 00:02:35.430
+OK.
+
+00:02:35.430 --> 00:02:37.170
+So we're able to either
+choose one thing,
+
+00:02:37.170 --> 00:02:39.169
+choose one thing or
+another, but what if we want
+
+00:02:39.169 --> 00:02:42.490
+to have more than one choice?
+
+00:02:42.490 --> 00:02:46.590
+So if some number is equal
+to zero, I want to do this.
+
+00:02:46.590 --> 00:02:48.450
+If it's equal to 1,
+I want to do this.
+
+00:02:48.450 --> 00:02:51.180
+If it's equal to 2, I want
+to do this, and so on.
+
+00:02:51.180 --> 00:02:53.940
+That's where this
+last one comes in.
+
+00:02:53.940 --> 00:03:00.660
+And we introduced this other
+key word here called elif.
+
+00:03:00.660 --> 00:03:04.230
+So that stands for
+short form for else if.
+
+00:03:04.230 --> 00:03:08.170
+So first we check if
+this condition is true.
+
+00:03:08.170 --> 00:03:09.810
+So we're going
+through our program,
+
+00:03:09.810 --> 00:03:11.910
+we've reached our
+decision point,
+
+00:03:11.910 --> 00:03:14.820
+if the condition is true,
+we're going to execute maybe
+
+00:03:14.820 --> 00:03:16.200
+this set of instructions.
+
+00:03:19.240 --> 00:03:21.400
+If the condition is
+not true, maybe we'll
+
+00:03:21.400 --> 00:03:24.470
+check-- if the
+condition is not true,
+
+00:03:24.470 --> 00:03:26.860
+we will check this
+next condition.
+
+00:03:26.860 --> 00:03:29.722
+That's part of the
+elif right here.
+
+00:03:29.722 --> 00:03:31.180
+And if that one's
+true, we're going
+
+00:03:31.180 --> 00:03:33.640
+to execute a different
+set of instructions.
+
+00:03:33.640 --> 00:03:36.184
+You can have more than one elif.
+
+00:03:36.184 --> 00:03:37.600
+And depending on
+which one's true,
+
+00:03:37.600 --> 00:03:40.870
+you're going to execute a
+different set of instructions.
+
+00:03:40.870 --> 00:03:43.390
+And then this last else
+is sort of a catch all
+
+00:03:43.390 --> 00:03:46.430
+where if none of the previous
+conditions were true,
+
+00:03:46.430 --> 00:03:50.020
+then just do this last
+set of expressions.
+
+00:03:50.020 --> 00:03:53.110
+So in this case, you're
+going to choose between one
+
+00:03:53.110 --> 00:03:55.600
+of these three-- one
+of these four roots,
+
+00:03:55.600 --> 00:03:58.076
+or however many you have.
+
+00:03:58.076 --> 00:03:59.950
+And then when you're
+done making your choice,
+
+00:03:59.950 --> 00:04:02.751
+you're going to execute the
+remaining set of instructions.
+
+00:04:06.190 --> 00:04:09.310
+So the way this works is if
+more than one condition is true,
+
+00:04:09.310 --> 00:04:12.880
+you're actually just going
+to enter one of them.
+
+00:04:12.880 --> 00:04:15.940
+And you're going to enter the
+very first one that's true.
+
+00:04:15.940 --> 00:04:17.860
+So you're never going
+to enter more than one
+
+00:04:17.860 --> 00:04:20.560
+of these code blocks.
+
+00:04:20.560 --> 00:04:23.140
+You always enter one, and
+you enter the first one
+
+00:04:23.140 --> 00:04:24.810
+that evaluates to true.

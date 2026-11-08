@@ -1,0 +1,291 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.050
+So here's a proverbial black box,
+and let's stipulate for the moment
+
+00:00:03.050 --> 00:00:07.310
+that I have no idea how hashing works,
+but I do know that this box can do it.
+
+00:00:07.310 --> 00:00:09.230
+So how do I think about this process?
+
+00:00:09.230 --> 00:00:13.100
+Well generally speaking, there's
+going to be some input to this box.
+
+00:00:13.100 --> 00:00:16.230
+Ultimately, I want to get
+some output from that box.
+
+00:00:16.230 --> 00:00:20.750
+And what this box really represents
+is, in fact, a hash function.
+
+00:00:20.750 --> 00:00:23.660
+You can think of this as a
+device like some kind of machine;
+
+00:00:23.660 --> 00:00:26.570
+you can think of it like a
+program, some piece of software;
+
+00:00:26.570 --> 00:00:30.160
+or you can even think about it as a
+mathematical function that operates
+
+00:00:30.160 --> 00:00:32.360
+simply on numbers coming in as input.
+
+00:00:32.360 --> 00:00:34.210
+In fact, if you're
+mathematically inclined,
+
+00:00:34.210 --> 00:00:38.140
+though we won't use this syntax often,
+you can think of that hash function
+
+00:00:38.140 --> 00:00:42.850
+as being represented by f, you can think
+of the input as being represented by x,
+
+00:00:42.850 --> 00:00:47.278
+and you can think of the output of
+this process as being so-called f of x.
+
+00:00:47.278 --> 00:00:49.570
+If you're not familiar with
+that notation, that's fine,
+
+00:00:49.570 --> 00:00:53.350
+but this is directly connected
+hashing to basic mathematics
+
+00:00:53.350 --> 00:00:55.480
+as well that you might
+encounter before long.
+
+00:00:55.480 --> 00:00:59.530
+But what we care about is passing
+into this black box a password
+
+00:00:59.530 --> 00:01:03.040
+and getting out a hash, and
+then storing that hash and not
+
+00:01:03.040 --> 00:01:07.270
+the password in our database or text
+file of usernames and passwords.
+
+00:01:07.270 --> 00:01:09.200
+So how might we go about doing this?
+
+00:01:09.200 --> 00:01:13.360
+Well, if I were to provide apple
+as an input to this hash function,
+
+00:01:13.360 --> 00:01:16.510
+let's think about the simplest
+hash function possible
+
+00:01:16.510 --> 00:01:21.700
+that doesn't output apple, but
+some representation of apple
+
+00:01:21.700 --> 00:01:23.925
+that I can eventually
+store in that database.
+
+00:01:23.925 --> 00:01:27.050
+So I'm going to propose very simply
+that maybe the a simplest hash function
+
+00:01:27.050 --> 00:01:29.930
+we can come up with-- and indeed,
+if you've studied computer science
+
+00:01:29.930 --> 00:01:32.600
+or taken CS50 itself,
+you might recall that we
+
+00:01:32.600 --> 00:01:36.900
+can hash our inputs unlike
+specific letters therein.
+
+00:01:36.900 --> 00:01:39.080
+So apple starts with
+A. So you know what?
+
+00:01:39.080 --> 00:01:41.090
+A is the first letter
+of the English alphabet.
+
+00:01:41.090 --> 00:01:43.070
+So I'm going to create
+a hash function here
+
+00:01:43.070 --> 00:01:47.960
+pictorially that outputs one whenever
+the input happens to start with an A,
+
+00:01:47.960 --> 00:01:49.130
+as does apple.
+
+00:01:49.130 --> 00:01:51.590
+Meanwhile, if we pass
+in banana, I'm going
+
+00:01:51.590 --> 00:01:54.140
+to have this hash function
+output 2 because B
+
+00:01:54.140 --> 00:01:56.270
+is the letter of the English alphabet.
+
+00:01:56.270 --> 00:02:01.100
+And dot-dot-dot, we might get to cherry
+or other passwords as well that might
+
+00:02:01.100 --> 00:02:02.840
+output 3 and beyond.
+
+00:02:02.840 --> 00:02:06.470
+And you could imagine doing this for
+all letters of the English alphabet.
+
+00:02:06.470 --> 00:02:09.470
+Now unfortunately, this
+isn't the best hash function
+
+00:02:09.470 --> 00:02:11.240
+because it's fairly simplistic.
+
+00:02:11.240 --> 00:02:14.780
+And in fact, I can quickly think
+of some other fruits like avocados
+
+00:02:14.780 --> 00:02:18.493
+that also start with A and that
+would give me the same hash value.
+
+00:02:18.493 --> 00:02:20.660
+And that's actually a
+characteristic we'll come back
+
+00:02:20.660 --> 00:02:25.430
+to whereby when you hash values,
+there can actually be ambiguities,
+
+00:02:25.430 --> 00:02:30.180
+potentially, whereby two inputs
+might actually have the same output,
+
+00:02:30.180 --> 00:02:33.400
+and we'll consider eventually what
+the implications of that might be.
+
+00:02:33.400 --> 00:02:36.240
+But for now, I dare say that's
+a little too simplistic.
+
+00:02:36.240 --> 00:02:40.170
+And what might be better
+than outputting 1 or 2 or 3
+
+00:02:40.170 --> 00:02:43.920
+is a little something more cryptic,
+because that's just too helpful.
+
+00:02:43.920 --> 00:02:45.070
+That's too much of a hint.
+
+00:02:45.070 --> 00:02:47.880
+If I see that your hash
+value is 1, I at least
+
+00:02:47.880 --> 00:02:51.930
+know that your password now clearly
+starts with an A, which means at best,
+
+00:02:51.930 --> 00:02:56.170
+I can do 1/26th the amount of work
+to figure out what it actually is.
+
+00:02:56.170 --> 00:03:00.210
+So we want these hashes generally to
+be a little weird-looking and really
+
+00:03:00.210 --> 00:03:03.040
+unguessable and not
+leak any information.
+
+00:03:03.040 --> 00:03:07.560
+So for instance, a very common older
+hash function for apple might actually
+
+00:03:07.560 --> 00:03:15.180
+output this-- ..ekWXa83dhiA with some
+mixed uppercase and lowercase letters
+
+00:03:15.180 --> 00:03:15.780
+therein.
+
+00:03:15.780 --> 00:03:19.780
+Now it looks weird, you probably can't
+and shouldn't see any kind of pattern
+
+00:03:19.780 --> 00:03:20.280
+in there.
+
+00:03:20.280 --> 00:03:24.090
+There is a fancy math formula
+that took as input apple
+
+00:03:24.090 --> 00:03:28.020
+and outputted as its hash
+value that string of text
+
+00:03:28.020 --> 00:03:31.770
+there, but in and of itself, it
+doesn't really leak any information
+
+00:03:31.770 --> 00:03:33.870
+like the number 1 or 2 or 3 would.
+
+00:03:33.870 --> 00:03:35.520
+So we've already made an improvement.
+
+00:03:35.520 --> 00:03:38.110
+Banana, meanwhile, would look like this.
+
+00:03:38.110 --> 00:03:40.780
+And cherry, meanwhile,
+would look like that.
+
+00:03:40.780 --> 00:03:43.840
+So notice that these values
+are indeed quite different.
+
+00:03:43.840 --> 00:03:46.920
+So using this better hash function,
+I claim, that doesn't just
+
+00:03:46.920 --> 00:03:48.660
+look at the first
+letter of the alphabet,
+
+00:03:48.660 --> 00:03:51.810
+but looks at maybe all of
+the letters in the input--
+
+00:03:51.810 --> 00:03:55.980
+C-H-E-R-R-Y in this case, we can
+probably come up with something more
+
+00:03:55.980 --> 00:03:58.530
+interesting, more
+cryptic-looking, if you will,
+
+00:03:58.530 --> 00:04:00.150
+like the values that we've just seen.

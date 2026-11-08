@@ -1,0 +1,52 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.377
+Imagine you're checking a delivery rule
+before it goes live. The fee is waived
+when the order has at least ten items.
+
+00:00:06.577 --> 00:00:12.190
+Before you touch the code, decide what
+should happen at exactly ten. That's the
+value we will come back to.
+
+00:00:15.390 --> 00:00:21.443
+The first function uses greater than ten.
+Nine returns false, and eleven returns
+true. Both answers look fine.
+
+00:00:21.643 --> 00:00:26.549
+Now try ten. The function returns false.
+Our rule includes ten, so the expected
+answer is true.
+
+00:00:27.749 --> 00:00:33.389
+An assert checks that a condition is true.
+If it is false, Python stops and tells us
+which check failed.
+
+00:00:33.589 --> 00:00:40.292
+Here, the test records our expectation.
+The failure tells us where to look. It
+doesn't tell us to change the expectation.
+
+00:00:41.492 --> 00:00:47.365
+Change greater than to greater than or
+equal to. Run all three tests, including
+the ones that already passed.
+
+00:00:47.565 --> 00:00:54.029
+A boundary test checks the point where the
+result changes. The neighbouring values
+help catch a repair that breaks either
+side.
+
+00:00:55.229 --> 00:01:02.317
+A parcel is accepted if it weighs at most
+five kilograms. Which values would catch a
+function that rejects exactly five?
+
+00:01:02.517 --> 00:01:08.215
+Pause and write the expected answer for
+each value. Then explain which of your
+tests distinguishes the two rules.

@@ -1,0 +1,638 @@
+WEBVTT
+
+00:25:31.800 --> 00:25:35.570
+Now, odds are, if your computer is like
+mine, you don't lose all of your files
+
+00:25:35.570 --> 00:25:37.880
+and all of your programs just
+because your battery dies
+
+00:25:37.880 --> 00:25:40.505
+or you move a computer, and
+therefore, unplug it from the wall.
+
+00:25:40.505 --> 00:25:42.320
+It would not be a very useful device.
+
+00:25:42.320 --> 00:25:46.850
+Computers do have nonvolatile
+memory that sticks around
+
+00:25:46.850 --> 00:25:49.910
+even when the power is lost, but
+it uses a different technology
+
+00:25:49.910 --> 00:25:51.350
+than RAM for that.
+
+00:25:51.350 --> 00:25:55.160
+It tends to use a disk or a
+hard disk, as in this case.
+
+00:25:55.160 --> 00:25:59.540
+So this is a device that a PC desktop
+or Mac desktop might have inside of it.
+
+00:25:59.540 --> 00:26:03.350
+And it actually stores quite a bit
+more information than a stick of RAM.
+
+00:26:03.350 --> 00:26:08.360
+A stick of RAM might store one gigabyte,
+two gigabytes, maybe even 16 gigabytes.
+
+00:26:08.360 --> 00:26:11.810
+But a hard drive, as
+this thing is called,
+
+00:26:11.810 --> 00:26:16.940
+will actually store 256 gigabytes,
+or maybe 1,000 gigabytes,
+
+00:26:16.940 --> 00:26:21.740
+AKA a terabyte or even two
+terabytes or four terabytes, which
+
+00:26:21.740 --> 00:26:25.292
+is an order of magnitude
+more than our sticks of RAM.
+
+00:26:25.292 --> 00:26:27.500
+Inside of this device,
+though, meanwhile is something
+
+00:26:27.500 --> 00:26:29.100
+that feels kind of old school.
+
+00:26:29.100 --> 00:26:32.900
+It's actually one or more
+metal platters that literally
+
+00:26:32.900 --> 00:26:35.630
+physically spin around mechanically.
+
+00:26:35.630 --> 00:26:38.610
+And on those platters is
+your data actually stored.
+
+00:26:38.610 --> 00:26:41.600
+So in RAM, there were no moving parts.
+
+00:26:41.600 --> 00:26:44.750
+There is no fan, there's no motor,
+there's nothing to move back and forth.
+
+00:26:44.750 --> 00:26:46.070
+It's entirely electronic.
+
+00:26:46.070 --> 00:26:48.350
+It's all electrons at
+the end of the day.
+
+00:26:48.350 --> 00:26:51.992
+But a hard drive is a mechanical
+device that actually has one or more
+
+00:26:51.992 --> 00:26:54.200
+of these platters spinning
+and spinning and spinning.
+
+00:26:54.200 --> 00:26:56.075
+And that's what allows
+the computer to access
+
+00:26:56.075 --> 00:26:57.740
+different areas of those platters.
+
+00:26:57.740 --> 00:27:00.650
+And, in fact, you'll see one or
+more of these little reading heads,
+
+00:27:00.650 --> 00:27:03.020
+not unlike old school
+phonograph or record
+
+00:27:03.020 --> 00:27:05.240
+players that actually
+move back and forth
+
+00:27:05.240 --> 00:27:08.060
+and read the data from that device.
+
+00:27:08.060 --> 00:27:11.810
+And what's nice about this
+device is that it's nonvolatile.
+
+00:27:11.810 --> 00:27:17.810
+It uses tiny, tiny magnetic particles,
+little specks of magnetic particles,
+
+00:27:17.810 --> 00:27:20.540
+that, if you orient them
+this way might represent a 1.
+
+00:27:20.540 --> 00:27:24.420
+If you orient them this way it might
+represent a 0-- so north to south pole,
+
+00:27:24.420 --> 00:27:27.350
+south to north pole if you
+remember some of your electronics.
+
+00:27:27.350 --> 00:27:31.310
+But all that is to say is there's tiny,
+tiny, tiny little particles on here,
+
+00:27:31.310 --> 00:27:35.330
+billions or more perhaps, that,
+depending on their orientation up
+
+00:27:35.330 --> 00:27:37.990
+or down, represent a 1 or 0.
+
+00:27:37.990 --> 00:27:39.740
+And if you have enough
+of those particles,
+
+00:27:39.740 --> 00:27:43.880
+you can represent bytes or
+megabytes or gigabytes or terabytes
+
+00:27:43.880 --> 00:27:46.040
+or more or anything in between.
+
+00:27:46.040 --> 00:27:50.300
+And so you have the ability
+to store data this way
+
+00:27:50.300 --> 00:27:52.400
+or this way, even when the power is off.
+
+00:27:52.400 --> 00:27:56.900
+The power is used just to read the
+data or to write or change the data.
+
+00:27:56.900 --> 00:28:00.770
+It doesn't need to stick
+around to persist the data.
+
+00:28:00.770 --> 00:28:03.410
+So in fact, why don't we take
+a look at what this motor looks
+
+00:28:03.410 --> 00:28:06.350
+like when actually running.
+
+00:28:06.350 --> 00:28:09.890
+This is a short video from the
+Slow Mo Guys, which gives us
+
+00:28:09.890 --> 00:28:12.770
+a sense of what the hard drive
+looks like when its lid is indeed
+
+00:28:12.770 --> 00:28:13.790
+removed like that there.
+
+00:28:13.790 --> 00:28:27.810
+[VIDEO PLAYBACK]
+
+00:28:27.810 --> 00:28:28.310
+[END VIDEO]
+
+00:28:28.310 --> 00:28:29.060
+DAVID J. MALAN: Fascinating.
+
+00:28:29.060 --> 00:28:29.750
+I know.
+
+00:28:29.750 --> 00:28:33.470
+Well, now let's actually take the
+hood off of an actual hard drive,
+
+00:28:33.470 --> 00:28:38.450
+albeit via animation, and actually see
+and hear what it is that's going on.
+
+00:28:38.450 --> 00:28:41.720
+And in this depiction here, you'll see
+that the magnetic particles ultimately
+
+00:28:41.720 --> 00:28:45.020
+are represented as red-blue,
+or blue-red particles, which
+
+00:28:45.020 --> 00:28:47.420
+represent precisely those
+magnetic particles that
+
+00:28:47.420 --> 00:28:49.410
+represent your 0s and 1s.
+
+00:28:49.410 --> 00:28:50.760
+[VIDEO PLAYBACK]
+
+00:28:50.760 --> 00:28:54.960
+- The hard drive is where your PC
+stores most of its permanent data.
+
+00:28:54.960 --> 00:28:57.900
+To do that, the data
+travels from RAM along
+
+00:28:57.900 --> 00:29:02.340
+with software signals that tell the
+hard drive how to store that data.
+
+00:29:02.340 --> 00:29:07.300
+The hard drive circuits translate those
+signals into voltage fluctuations.
+
+00:29:07.300 --> 00:29:10.470
+These, in turn, control the
+hard drive's moving parts--
+
+00:29:10.470 --> 00:29:14.200
+some of the few moving parts
+left in the modern computer.
+
+00:29:14.200 --> 00:29:18.390
+Some of the signals control a motor
+which spins metal-coated platters.
+
+00:29:18.390 --> 00:29:21.700
+Your data is actually
+stored on these platters.
+
+00:29:21.700 --> 00:29:26.970
+Other signals move the read-write heads
+to read or write data on the platters.
+
+00:29:26.970 --> 00:29:30.840
+This machinery is so precise
+that a human hair couldn't even
+
+00:29:30.840 --> 00:29:33.590
+pass between the heads
+and spinning platters.
+
+00:29:33.590 --> 00:29:35.725
+Yet, it all works at terrific speeds.
+
+00:29:35.725 --> 00:29:36.615
+[END VIDEO]
+
+00:29:36.615 --> 00:29:38.490
+DAVID J. MALAN: So where
+are those particles?
+
+00:29:38.490 --> 00:29:41.850
+Well, for that, we're going to have to
+zoom in even closer because they're not
+
+00:29:41.850 --> 00:29:43.350
+visible to the human eye.
+
+00:29:43.350 --> 00:29:45.030
+[VIDEO PLAYBACK]
+
+00:29:45.030 --> 00:29:48.000
+- Let's look at what we
+just saw in slow motion.
+
+00:29:48.000 --> 00:29:51.510
+When a brief pulse of electricity
+is sent to the read-write head,
+
+00:29:51.510 --> 00:29:55.260
+it flips on a tiny electromagnet
+for a fraction of a second.
+
+00:29:55.260 --> 00:29:58.350
+The magnet creates a field
+which changes the polarity
+
+00:29:58.350 --> 00:30:00.840
+of a tiny, tiny portion
+of the metal particles
+
+00:30:00.840 --> 00:30:03.240
+which coat each platter surface.
+
+00:30:03.240 --> 00:30:06.240
+A pattern series of these tiny
+charged up areas on the disk
+
+00:30:06.240 --> 00:30:10.860
+represents a single bit of data in the
+binary number system used by computers.
+
+00:30:10.860 --> 00:30:13.770
+Now, if the current is sent one
+way through the read-write head,
+
+00:30:13.770 --> 00:30:16.211
+the area is polarized in one direction.
+
+00:30:16.211 --> 00:30:18.210
+If the current is set in
+the opposite direction,
+
+00:30:18.210 --> 00:30:20.310
+the polarization is reversed.
+
+00:30:20.310 --> 00:30:22.740
+How do you get data off the hard disk?
+
+00:30:22.740 --> 00:30:24.451
+Just reverse the process.
+
+00:30:24.451 --> 00:30:26.700
+So it's the particles on the
+disk that get the current
+
+00:30:26.700 --> 00:30:28.440
+in the read-write head moving.
+
+00:30:28.440 --> 00:30:30.870
+Put together millions of
+these magnetized segments,
+
+00:30:30.870 --> 00:30:32.490
+and you've got a file.
+
+00:30:32.490 --> 00:30:35.460
+Now, the pieces of a single
+file may be scattered
+
+00:30:35.460 --> 00:30:40.450
+all over a drive's platters kind of
+like the mess of papers on your desk.
+
+00:30:40.450 --> 00:30:43.860
+So a special extra file keeps
+track of where everything is.
+
+00:30:43.860 --> 00:30:45.790
+Don't you wish you had
+something like that?
+
+00:30:45.790 --> 00:30:48.199
+[END VIDEO]
+
+00:30:48.199 --> 00:30:50.490
+DAVID J. MALAN: Now, anytime
+you have a physical device
+
+00:30:50.490 --> 00:30:53.280
+like this that's spinning
+all day long or for months
+
+00:30:53.280 --> 00:30:56.640
+on end, if you use your computer a lot
+and for quite a long period of time,
+
+00:30:56.640 --> 00:30:58.060
+something could go wrong.
+
+00:30:58.060 --> 00:31:02.100
+Maybe you accidentally bump the desktop
+or the laptop, the result of which
+
+00:31:02.100 --> 00:31:04.890
+is that this reading head might
+actually strike the platter
+
+00:31:04.890 --> 00:31:07.980
+and make a dent in it or some kind of
+scratch which actually will corrupt,
+
+00:31:07.980 --> 00:31:10.270
+not only some of the data
+perhaps, but might even
+
+00:31:10.270 --> 00:31:14.250
+stop the whole device from working if
+the reading head no longer functions
+
+00:31:14.250 --> 00:31:14.920
+properly.
+
+00:31:14.920 --> 00:31:17.280
+Moreover, anything
+that's physical like this
+
+00:31:17.280 --> 00:31:20.520
+isn't going to spin all that
+fast at the end of the day.
+
+00:31:20.520 --> 00:31:24.250
+Now technically, a hard drive like
+this might spin 7,200 times per minute
+
+00:31:24.250 --> 00:31:28.560
+or even 10,000 times per minute,
+but that's much, much slower
+
+00:31:28.560 --> 00:31:31.200
+than the speed with
+which electrons travel
+
+00:31:31.200 --> 00:31:33.357
+as they would in something like RAM.
+
+00:31:33.357 --> 00:31:35.190
+Well, fortunately, it
+turns out that there's
+
+00:31:35.190 --> 00:31:39.070
+something in between those technologies
+that doesn't have moving parts,
+
+00:31:39.070 --> 00:31:43.740
+but that's not quite as fast as
+RAM, but that is non-volatile,
+
+00:31:43.740 --> 00:31:46.350
+whereby it will store
+your data persistently
+
+00:31:46.350 --> 00:31:47.820
+even when the power is off.
+
+00:31:47.820 --> 00:31:53.280
+And this is so-called flash memory or
+a Solid State Disk, SSD, in this case
+
+00:31:53.280 --> 00:31:53.790
+here.
+
+00:31:53.790 --> 00:31:57.660
+It's a smaller device, whereas typical
+hard drives that have moving parts
+
+00:31:57.660 --> 00:32:00.300
+are very often 3 and 1/2
+inches, although 2 and 1/2 inch
+
+00:32:00.300 --> 00:32:03.210
+versions do exist as well, in diameter.
+
+00:32:03.210 --> 00:32:08.490
+A solid state drive tends to
+be only 2.5 inches in width
+
+00:32:08.490 --> 00:32:11.220
+so that it actually fits inside
+of computers in the same slots
+
+00:32:11.220 --> 00:32:14.580
+that older more mechanical
+hard drives might fit.
+
+00:32:14.580 --> 00:32:16.020
+But it doesn't have moving parts.
+
+00:32:16.020 --> 00:32:19.144
+In fact, if we open it up, you'll see
+something very reminiscent of the RAM
+
+00:32:19.144 --> 00:32:19.860
+we saw earlier.
+
+00:32:19.860 --> 00:32:24.390
+But the technology inside of this
+device is such that the data persists,
+
+00:32:24.390 --> 00:32:27.720
+even when your battery dies or
+you unplug your laptop or desktop.
+
+00:32:27.720 --> 00:32:33.990
+But the upside of an SSD, being entirely
+electronic, is that it's much faster.
+
+00:32:33.990 --> 00:32:35.790
+And so this means that
+your programs will
+
+00:32:35.790 --> 00:32:38.250
+load faster when you
+double-click them, your files
+
+00:32:38.250 --> 00:32:40.410
+will open up faster when
+you double-click on them.
+
+00:32:40.410 --> 00:32:44.160
+Anything you might do or save to
+your hard drive or solid state drive,
+
+00:32:44.160 --> 00:32:46.920
+in this case, will actually get
+saved much more quickly, which
+
+00:32:46.920 --> 00:32:50.801
+means you might see a little hourglass
+or spinning beachball much less
+
+00:32:50.801 --> 00:32:51.300
+frequently.
+
+00:32:51.300 --> 00:32:55.230
+And your computer is going to
+behave and certainly feel faster.
+
+00:32:55.230 --> 00:32:58.830
+Now the catch is that solid
+state drives, theoretically,
+
+00:32:58.830 --> 00:33:02.340
+won't necessarily last as long,
+depending on the quality of the brand
+
+00:33:02.340 --> 00:33:04.470
+and the technology being
+used whereby they only
+
+00:33:04.470 --> 00:33:06.030
+have a finite number of writes.
+
+00:33:06.030 --> 00:33:09.070
+You can read from them
+nearly as much as you want.
+
+00:33:09.070 --> 00:33:12.600
+But over time, they'll degrade
+in terms of how many times
+
+00:33:12.600 --> 00:33:13.830
+you can keep writing to them.
+
+00:33:13.830 --> 00:33:15.570
+Now, for many people this
+might be a non-issue,
+
+00:33:15.570 --> 00:33:18.690
+but to mitigate against this, has
+the industry also introduced what are
+
+00:33:18.690 --> 00:33:20.170
+called hybrid drives--
+
+00:33:20.170 --> 00:33:23.850
+hard drives that might be the
+same size as this or the same size
+
+00:33:23.850 --> 00:33:26.820
+as a 3 and 1/2 inch drive like
+the spinning mechanical device we
+
+00:33:26.820 --> 00:33:30.540
+saw a moment ago in our animated form--
+
+00:33:30.540 --> 00:33:33.330
+but they might have both
+some solid state memory
+
+00:33:33.330 --> 00:33:38.010
+and some mechanical hard drive memory
+so that you might have a few megabytes
+
+00:33:38.010 --> 00:33:40.470
+or gigabytes of solid state memory.
+
+00:33:40.470 --> 00:33:44.220
+And you might have a few gigabytes
+or terabytes of traditional hard disk
+
+00:33:44.220 --> 00:33:44.910
+space.
+
+00:33:44.910 --> 00:33:48.870
+And the device itself moves
+your data around in a clever way
+
+00:33:48.870 --> 00:33:51.360
+so that it tries to keep as
+much of the data that you
+
+00:33:51.360 --> 00:33:55.170
+want to use, at a given moment, on
+the solid state part of the device
+
+00:33:55.170 --> 00:33:57.300
+so that it's readily accessible for you.
+
+00:33:57.300 --> 00:33:59.970
+And the data that you might
+not need, right then and there,
+
+00:33:59.970 --> 00:34:02.340
+stays on the slower,
+more mechanical device
+
+00:34:02.340 --> 00:34:04.920
+where, nonetheless, you
+have a lot more storage.

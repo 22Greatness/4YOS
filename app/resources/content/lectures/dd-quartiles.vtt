@@ -1,0 +1,59 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.992
+Five requests took twelve, fourteen,
+fifteen, sixteen and eighteen minutes.
+Picture them in order, one dot per
+request.
+
+00:00:06.192 --> 00:00:11.820
+The middle is the third position. That
+puts the median at fifteen minutes. There
+are two positions on either side.
+
+00:00:13.020 --> 00:00:19.065
+For the mean, add the waits and divide by
+how many there are. Seventy-five divided
+by five gives fifteen.
+
+00:00:19.265 --> 00:00:25.683
+Now imagine the longest request took
+forty-eight minutes. Pause and predict
+which number moves, the mean or the
+median.
+
+00:00:28.883 --> 00:00:35.122
+The sum rises by thirty minutes. Shared
+across five requests, that raises the mean
+by six, from fifteen to twenty-one.
+
+00:00:35.322 --> 00:00:42.386
+The third position still holds fifteen.
+The median stays there. One number reports
+the average cost in minutes. The other
+locates the middle wait.
+
+00:00:43.586 --> 00:00:49.850
+For quartiles, leave out the centre of
+this odd-sized batch and find the median
+of each half. Twelve and fourteen give
+thirteen.
+
+00:00:50.050 --> 00:00:59.686
+The upper half changes from sixteen and
+eighteen to sixteen and forty-eight. Its
+median moves from seventeen to thirty-two.
+The gap between the quartiles grows from
+four to nineteen.
+
+00:01:00.886 --> 00:01:07.436
+Try these six waits. Find the middle using
+both central positions, then split the
+data into two halves to find the
+quartiles.
+
+00:01:07.636 --> 00:01:14.840
+In your handover, say what the typical
+middle wait was and mention the longest
+wait separately. Tell the reader how many
+requests you observed.

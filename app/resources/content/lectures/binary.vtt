@@ -1,0 +1,390 @@
+WEBVTT
+
+00:00:00.261 --> 00:00:02.760
+DAVID J. MALAN: Odds are, you
+use a computer most every day.
+
+00:00:02.760 --> 00:00:06.010
+But what's going on inside of
+that laptop or that desktop.
+
+00:00:06.010 --> 00:00:08.676
+Well, inside of a computer
+are all these 0s and 1s.
+
+00:00:08.676 --> 00:00:10.800
+And you may have heard,
+indeed, that computers only
+
+00:00:10.800 --> 00:00:14.280
+understand 0s and 1s, or the,
+so-called, binary system.
+
+00:00:14.280 --> 00:00:16.620
+But if computers today
+can do so much, how can
+
+00:00:16.620 --> 00:00:19.920
+they do so much if they can
+only speak 0s and 1s and not
+
+00:00:19.920 --> 00:00:22.230
+even the entire alphabet
+that we humans have.
+
+00:00:22.230 --> 00:00:24.000
+Well, consider this.
+
+00:00:24.000 --> 00:00:28.130
+Back in our human world, you might
+recognize a pattern of symbols
+
+00:00:28.130 --> 00:00:31.590
+like this as the number 123.
+
+00:00:31.590 --> 00:00:32.460
+But why is that?
+
+00:00:32.460 --> 00:00:35.670
+After all, all I did was draw
+three shapes, really, three glyphs,
+
+00:00:35.670 --> 00:00:38.160
+or three symbols or
+digits on the screen.
+
+00:00:38.160 --> 00:00:41.130
+But each of these digits
+has some predefined meaning.
+
+00:00:41.130 --> 00:00:44.850
+If, in fact, if you went to grade school
+like I did and you learned numbers
+
+00:00:44.850 --> 00:00:47.610
+in this way, odds are, you might
+recall, that this rightmost
+
+00:00:47.610 --> 00:00:50.940
+column is the so-called
+one's column or one's place.
+
+00:00:50.940 --> 00:00:52.590
+Then this is the ten's place.
+
+00:00:52.590 --> 00:00:54.510
+And then this is the hundred's place.
+
+00:00:54.510 --> 00:00:56.349
+Now why is that significant?
+
+00:00:56.349 --> 00:01:00.060
+Well, the reason that 1, 2,
+3-- that pattern represents
+
+00:01:00.060 --> 00:01:02.970
+the number we humans know
+is 123 is that there's
+
+00:01:02.970 --> 00:01:04.830
+a bit of arithmetic going on here.
+
+00:01:04.830 --> 00:01:10.770
+This, after all, means that you
+should do 100 times 1 plus 10 times
+
+00:01:10.770 --> 00:01:14.280
+2 plus 1 times 3.
+
+00:01:14.280 --> 00:01:21.930
+That, of course, gives us
+100 plus 20 plus 3 or 123.
+
+00:01:21.930 --> 00:01:24.540
+In other words, there's a
+pattern to these digits,
+
+00:01:24.540 --> 00:01:27.000
+and there's a meaning
+behind each of their places.
+
+00:01:27.000 --> 00:01:30.930
+Well, it turns out that computers
+only, indeed, understand 0s and 1s.
+
+00:01:30.930 --> 00:01:34.920
+They can't count as high as 2 and 3
+and 4 in the same way we humans can.
+
+00:01:34.920 --> 00:01:38.080
+But they use those 0s and
+1s in exactly the same way.
+
+00:01:38.080 --> 00:01:39.640
+In fact, consider this.
+
+00:01:39.640 --> 00:01:45.292
+If we consider this pattern 0,
+0, 0, to be inside of a computer,
+
+00:01:45.292 --> 00:01:47.250
+and that's what the
+computer is thinking, well,
+
+00:01:47.250 --> 00:01:48.610
+what number might this be.
+
+00:01:48.610 --> 00:01:50.360
+Well, the spoiler is
+that this is actually
+
+00:01:50.360 --> 00:01:53.760
+going to represent just 0, thankfully,
+just like in our human world.
+
+00:01:53.760 --> 00:01:54.910
+But why is that the case?
+
+00:01:54.910 --> 00:01:57.030
+And how can we count higher than 0?
+
+00:01:57.030 --> 00:02:00.030
+Well, in the computer world,
+realize that these places are just
+
+00:02:00.030 --> 00:02:00.870
+a little different.
+
+00:02:00.870 --> 00:02:02.869
+This is still the one's
+place, but this next one
+
+00:02:02.869 --> 00:02:04.440
+is not the ten's place anymore.
+
+00:02:04.440 --> 00:02:06.239
+It's, instead, the two's place.
+
+00:02:06.239 --> 00:02:08.530
+And this next place is not
+the hundred's place anymore.
+
+00:02:08.530 --> 00:02:11.412
+It's, instead, the four's place.
+
+00:02:11.412 --> 00:02:13.620
+And if you think about this,
+there's still a pattern.
+
+00:02:13.620 --> 00:02:17.370
+Previously, it was 1, 10, 100,
+and then if we kept going,
+
+00:02:17.370 --> 00:02:20.855
+1,000, 10,000 100,000, and so forth.
+
+00:02:20.855 --> 00:02:22.230
+And here, too, there's a pattern.
+
+00:02:22.230 --> 00:02:25.210
+1, 2, 4-- and if I kept going--
+
+00:02:25.210 --> 00:02:27.540
+8, 16, and 32.
+
+00:02:27.540 --> 00:02:30.930
+And so, in our human world,
+we tend to use powers of 10.
+
+00:02:30.930 --> 00:02:36.810
+10 to 0 is 1, 10 to the 1
+is 10, 10 to the 2 is 100.
+
+00:02:36.810 --> 00:02:42.510
+And in the computer world, this
+is 2 to the 0, which is 1, 2 to 1,
+
+00:02:42.510 --> 00:02:45.780
+which is 2, 2 to the 2,
+or 2 squared, which is 4.
+
+00:02:45.780 --> 00:02:48.820
+2 to 3 would be 8 and so forth.
+
+00:02:48.820 --> 00:02:52.050
+So all we're doing is changing the
+base that we're using, so to speak.
+
+00:02:52.050 --> 00:02:54.930
+Instead of powers of 10,
+we're using powers of 2.
+
+00:02:54.930 --> 00:03:00.460
+And so why is this number 0, 0, 0 the
+number we humans know as 0 itself?
+
+00:03:00.460 --> 00:03:06.870
+Well, again, if we just do the math, 4
+times 0 plus 2 times 0 plus 1 times 0
+
+00:03:06.870 --> 00:03:13.050
+is, of course, 0 plus 0 plus 0 or
+the number we humans know as just 0.
+
+00:03:13.050 --> 00:03:15.420
+Well, what if we do
+another number altogether?
+
+00:03:15.420 --> 00:03:18.817
+Suppose we do this pattern 0, 0, 1.
+
+00:03:18.817 --> 00:03:20.400
+Well, what number does this represent?
+
+00:03:20.400 --> 00:03:22.120
+Well, if you consider the same columns--
+
+00:03:22.120 --> 00:03:24.030
+1, 2, and 4--
+
+00:03:24.030 --> 00:03:29.490
+this means we have four times 0, which
+is 0, 2 times 0, which is 0, 1 times
+
+00:03:29.490 --> 00:03:31.180
+1, which is 1.
+
+00:03:31.180 --> 00:03:33.880
+So this is the number
+we humans know as 1.
+
+00:03:33.880 --> 00:03:34.380
+All right.
+
+00:03:34.380 --> 00:03:38.280
+So not all that interesting yet,
+but what about the number 2?
+
+00:03:38.280 --> 00:03:45.190
+How, in binary, bi meaning two, and the
+2 being a 0 and a 1, how, in binary,
+
+00:03:45.190 --> 00:03:47.480
+can I now count as high as 2?
+
+00:03:47.480 --> 00:03:50.260
+Well, if this is my one's
+place, this is my two's place,
+
+00:03:50.260 --> 00:03:55.060
+and this is my four's place, what digits
+do I want to put below those places
+
+00:03:55.060 --> 00:03:58.840
+if the only digits I have at my
+disposal now are not 0 through 9,
+
+00:03:58.840 --> 00:04:00.940
+but just 0 through 1?
+
+00:04:00.940 --> 00:04:03.841
+Well, I don't need a 4,
+so I can make that a 0.
+
+00:04:03.841 --> 00:04:06.340
+I do need 2 if I want to count
+to the number we know as two,
+
+00:04:06.340 --> 00:04:07.590
+so I'm going to put a 1 there.
+
+00:04:07.590 --> 00:04:10.390
+And I don't need an extra 1
+because an extra 1 would give me 3.
+
+00:04:10.390 --> 00:04:11.810
+So I'm going to do this.
+
+00:04:11.810 --> 00:04:14.650
+And so a computer, to
+store the number we humans
+
+00:04:14.650 --> 00:04:19.540
+know as two in decimal which
+store it in binary as 0, 1, 0.
+
+00:04:19.540 --> 00:04:23.800
+Because that's 4 times 0 plus
+2 times 1 plus time 1 times 0,
+
+00:04:23.800 --> 00:04:26.380
+which, of course, is going
+to give me the number 2.
+
+00:04:26.380 --> 00:04:27.195
+What about 3?
+
+00:04:27.195 --> 00:04:29.050
+Well, in the world of
+computers, if we again
+
+00:04:29.050 --> 00:04:31.210
+have our one's place two's
+place and four's place,
+
+00:04:31.210 --> 00:04:34.966
+how do I now arrange my zeros and ones
+to give me the number we know as 3?
+
+00:04:34.966 --> 00:04:36.340
+Well, let's see I don't need a 4.
+
+00:04:36.340 --> 00:04:37.256
+That would be too big.
+
+00:04:37.256 --> 00:04:39.340
+I do need a 2, and I do need a 1.
+
+00:04:39.340 --> 00:04:40.900
+And that is now going to give me 3.
+
+00:04:40.900 --> 00:04:47.110
+Because 2 times 1, 1 times 1 is
+2, 1 times 1 is 1, 2 plus 1 is 3.
+
+00:04:47.110 --> 00:04:48.399
+Now what about 4?
+
+00:04:48.399 --> 00:04:49.690
+How do I count as high as four?
+
+00:04:49.690 --> 00:04:53.630
+Well, it's even easier, perhaps because
+we just need a single 1 in this case.
+
+00:04:53.630 --> 00:04:56.016
+We just need 1, 0, 0.
+
+00:04:56.016 --> 00:04:57.890
+Because now I have one
+1 in the four's place.
+
+00:04:57.890 --> 00:04:58.960
+And now let's skip ahead.
+
+00:04:58.960 --> 00:05:04.450
+Suppose I want to count up
+as high as, let's say, 7?
+
+00:05:04.450 --> 00:05:05.780
+What do I do?
+
+00:05:05.780 --> 00:05:08.280
+Well, 7, let me take a byte out of that.
+
+00:05:08.280 --> 00:05:09.490
+So this gives me 4.
+
+00:05:09.490 --> 00:05:12.000
+Let me take a two, that
+gives me 4 plus 2, that's 6.

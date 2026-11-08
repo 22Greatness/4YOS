@@ -1,0 +1,469 @@
+WEBVTT
+
+00:09:29.010 --> 00:09:33.240
+How, though, do I represent letters
+of the actual alphabet, A through Z?
+
+00:09:33.240 --> 00:09:35.820
+How do I represent
+words or paragraphs, let
+
+00:09:35.820 --> 00:09:39.529
+alone emails, and any number of other
+features that computers today support?
+
+00:09:39.529 --> 00:09:41.820
+Well, for that, we're going
+to need to make a decision.
+
+00:09:41.820 --> 00:09:44.250
+We're going to need to
+decide what patterns of bits
+
+00:09:44.250 --> 00:09:48.990
+to use to represent those higher
+level notions like letters
+
+00:09:48.990 --> 00:09:50.610
+words and paragraphs.
+
+00:09:50.610 --> 00:09:52.050
+So for that, I've got an idea.
+
+00:09:52.050 --> 00:09:55.650
+So at the end of the day, all computers
+can store is, indeed, 0s and 1s.
+
+00:09:59.972 --> 00:10:01.680
+And from those zeros
+and ones, of course,
+
+00:10:01.680 --> 00:10:05.950
+can we count higher so long as we have
+a mapping from binary to the numbers
+
+00:10:05.950 --> 00:10:06.900
+we know as decimal.
+
+00:10:06.900 --> 00:10:08.990
+But, of course, we want
+our computers to do more.
+
+00:10:08.990 --> 00:10:12.656
+We want to be able to express
+words and even other types of data.
+
+00:10:12.656 --> 00:10:13.530
+So how do we do that?
+
+00:10:13.530 --> 00:10:16.950
+Well, we need to come up with
+a standardization, a mapping,
+
+00:10:16.950 --> 00:10:20.610
+from 0s and 1s, or really just
+numbers, to the letters that we want.
+
+00:10:20.610 --> 00:10:24.394
+And it turns out, that some years ago
+what humans decided to do was this.
+
+00:10:24.394 --> 00:10:26.810
+Now, at first glance, this
+might be a little overwhelming.
+
+00:10:26.810 --> 00:10:29.505
+This is just a screenshot of
+a chart from asciichart.com.
+
+00:10:29.505 --> 00:10:34.260
+An ASCII chart is a chart of ASCII
+characters, American Standard
+
+00:10:34.260 --> 00:10:36.270
+Code for Information Interchange.
+
+00:10:36.270 --> 00:10:40.410
+And this is simply a mapping
+from decimal numbers to letters.
+
+00:10:40.410 --> 00:10:42.150
+And so on let's notice a few of these.
+
+00:10:42.150 --> 00:10:48.690
+Notice here that 65 apparently maps
+to A, 66 maps to B, 67 maps to C,
+
+00:10:48.690 --> 00:10:49.410
+and so forth.
+
+00:10:49.410 --> 00:10:55.320
+Meanwhile, 97 maps to lowercase a,
+98 to lowercase b, 99 to lowercase c,
+
+00:10:55.320 --> 00:10:56.140
+and so forth.
+
+00:10:56.140 --> 00:10:58.590
+And there's also mappings
+from punctuation symbols
+
+00:10:58.590 --> 00:11:02.160
+to all the letters of the
+alphabet that you may know.
+
+00:11:02.160 --> 00:11:04.180
+So why is this significant?
+
+00:11:04.180 --> 00:11:08.180
+Well, it turns out that even though
+computers only store 0s and 1s,
+
+00:11:08.180 --> 00:11:09.930
+we, of course, use
+them in different ways.
+
+00:11:09.930 --> 00:11:13.860
+We have programs like Notepad
+on PCs, or TextEdit on Mac OS,
+
+00:11:13.860 --> 00:11:17.640
+or Microsoft Word on both platforms,
+or Google spreadsheets, or Google Docs,
+
+00:11:17.640 --> 00:11:18.370
+or the like.
+
+00:11:18.370 --> 00:11:20.161
+And so we have all
+these different programs
+
+00:11:20.161 --> 00:11:22.960
+that is designed to do
+one thing or the other.
+
+00:11:22.960 --> 00:11:27.060
+And so those programs essentially
+decide, in their own context,
+
+00:11:27.060 --> 00:11:31.380
+whether to display patterns of
+bits as numbers or as letters
+
+00:11:31.380 --> 00:11:33.120
+or, in turn, words and paragraphs.
+
+00:11:33.120 --> 00:11:35.580
+So it's entirely context-dependent.
+
+00:11:35.580 --> 00:11:38.610
+At the end of the day, all the
+computer is storing is 0s and 1s,
+
+00:11:38.610 --> 00:11:42.240
+but it's up to the program to interpret
+those 0s and 1s in a certain way.
+
+00:11:42.240 --> 00:11:46.650
+And so, if a program like
+Microsoft Word or Google Docs
+
+00:11:46.650 --> 00:11:54.580
+sees a pattern of bits in a file that
+represents the decimal number 65--
+
+00:11:54.580 --> 00:11:57.919
+it's still pattern of 0s
+and 1s expressed in binary,
+
+00:11:57.919 --> 00:12:00.460
+but of course, we've seen how
+we can convert that to decimal.
+
+00:12:00.460 --> 00:12:03.300
+So if a computer is ultimately
+storing a pattern of 0s and 1s
+
+00:12:03.300 --> 00:12:06.900
+that represents the decimal
+number 65, the computer,
+
+00:12:06.900 --> 00:12:10.130
+in this case Microsoft Word, or Google
+Docs, and the program running there,
+
+00:12:10.130 --> 00:12:13.650
+is going to interpret that
+pattern, not as the number 65,
+
+00:12:13.650 --> 00:12:18.240
+and not as a whole bunch of 0s and 1s
+alone, but as the capital letter A.
+
+00:12:18.240 --> 00:12:19.990
+And that's what you'll
+see on your screen.
+
+00:12:19.990 --> 00:12:24.022
+If it, instead, sees a pattern of bits
+that represents the decimal number 66,
+
+00:12:24.022 --> 00:12:25.980
+Microsoft Word or Google
+Docs is going to show,
+
+00:12:25.980 --> 00:12:28.530
+instead, the capitol letter
+B. If the pattern of bits
+
+00:12:28.530 --> 00:12:31.680
+instead represents
+the decimal number 97,
+
+00:12:31.680 --> 00:12:35.490
+that program is going to display
+the lowercase letter a or any number
+
+00:12:35.490 --> 00:12:37.630
+of other letters from the alphabet.
+
+00:12:37.630 --> 00:12:41.730
+And so we just had to decide
+in advance what mapping to use,
+
+00:12:41.730 --> 00:12:44.850
+what code to use that
+maps numbers to letters.
+
+00:12:44.850 --> 00:12:47.370
+And in fact, you'll notice
+that quite a few characters
+
+00:12:47.370 --> 00:12:48.890
+are absent from the screen here.
+
+00:12:48.890 --> 00:12:52.140
+In fact, if you speak some language and
+write some language other than English
+
+00:12:52.140 --> 00:12:53.931
+there might be some
+characters that you can
+
+00:12:53.931 --> 00:12:56.890
+express with just this range of values.
+
+00:12:56.890 --> 00:13:00.300
+In fact ASCII originally
+only used 7 bits total.
+
+00:13:00.300 --> 00:13:04.350
+Or if you round up, 8 bits total,
+for what's called the extended ASCII.
+
+00:13:04.350 --> 00:13:09.930
+And it turns out, that's not nearly
+enough patterns of bits, 256 maximally,
+
+00:13:09.930 --> 00:13:12.240
+that you can use to express
+characters that you might
+
+00:13:12.240 --> 00:13:15.900
+see in certain Asian languages or
+symbols that just simply are not
+
+00:13:15.900 --> 00:13:17.880
+depicted even yet on the screen here.
+
+00:13:17.880 --> 00:13:19.770
+So there are other
+systems, not just ASCII.
+
+00:13:19.770 --> 00:13:23.400
+Something called Unicode, for instance,
+is a superset of what you see here.
+
+00:13:23.400 --> 00:13:26.190
+And that actually allows us to
+express any number of characters
+
+00:13:26.190 --> 00:13:29.550
+from English and Asian languages
+and beyond and, in fact, even
+
+00:13:29.550 --> 00:13:32.739
+things like the emoji
+characters-- the smiley faces,
+
+00:13:32.739 --> 00:13:35.280
+and other such characters that
+you might now use increasingly
+
+00:13:35.280 --> 00:13:37.170
+on your phone, your desktop, or laptop.
+
+00:13:37.170 --> 00:13:40.287
+Those two are expressed ultimately
+as just patterns of bits.
+
+00:13:40.287 --> 00:13:42.120
+And the world, for the
+most part, has simply
+
+00:13:42.120 --> 00:13:44.820
+standardized on what
+pattern of bits represents
+
+00:13:44.820 --> 00:13:48.450
+a happy face, what pattern of
+bits represents a sad face,
+
+00:13:48.450 --> 00:13:51.750
+and beyond, in that
+system there is Unicode.
+
+00:13:51.750 --> 00:13:53.740
+So let's take an example.
+
+00:13:53.740 --> 00:13:57.450
+Suppose that you see this pattern
+of bits somewhere in a file.
+
+00:13:57.450 --> 00:14:00.840
+And you, in this context, say are
+Microsoft Word, or Google Docs,
+
+00:14:00.840 --> 00:14:04.560
+or some program designed to display,
+not numbers like a calculator,
+
+00:14:04.560 --> 00:14:08.310
+but words and letters like a
+word processor or a text editor.
+
+00:14:08.310 --> 00:14:10.140
+Well, what is this pattern of bits?
+
+00:14:10.140 --> 00:14:12.000
+Well, we haven't seen
+this many bits before,
+
+00:14:12.000 --> 00:14:16.230
+but it looks to be like
+two patterns of eight.
+
+00:14:16.230 --> 00:14:20.580
+And in fact, it turns out that anytime
+you have eight bits here or eight bits
+
+00:14:20.580 --> 00:14:24.810
+here, humans generally refer
+to this as a byte, B-Y-T-E.
+
+00:14:24.810 --> 00:14:26.730
+So a byte is just eight bits.
+
+00:14:26.730 --> 00:14:28.920
+And it's a slightly more
+useful measure because it's
+
+00:14:28.920 --> 00:14:32.980
+a lot bigger than a single bit, which
+can, of course, only represent 0 or 1.
+
+00:14:32.980 --> 00:14:35.260
+A byte can actually count higher.
+
+00:14:35.260 --> 00:14:38.640
+So what are the columns here if we
+look only at this number at left?
+
+00:14:38.640 --> 00:14:48.000
+This is my 1's place, 2's, 4's, 8's,
+16's, 32's, and 64, and then 128.
+
+00:14:48.030 --> 00:14:53.520
+So 64 plus 8, if I do that
+arithmetic, that gives me 72.
+
+00:14:53.550 --> 00:14:56.160
+Now let's consider the
+pattern of bits on the right.
+
+00:14:56.160 --> 00:15:05.250
+Again, my 1's place, 2's place,
+4's 8's, 16's, 32, 64, 128.
+
+00:15:05.250 --> 00:15:08.370
+Now notice, these patterns
+are actually almost identical.
+
+00:15:08.370 --> 00:15:12.340
+We've got a 1 in the 64's place,
+we've got a 1 in the 8's place,
+
+00:15:12.340 --> 00:15:15.690
+but we've also got an
+extra one in the 1's place.
+
+00:15:15.690 --> 00:15:21.750
+So if this was 72, and this pattern
+is identical except for this last bit
+
+00:15:21.750 --> 00:15:27.842
+here, which adds 1, this
+must be 72 followed by 73.
+
+00:15:27.842 --> 00:15:29.550
+And I've put a space
+here, visually, just
+
+00:15:29.550 --> 00:15:32.216
+to separate the fact that these
+are, indeed, two separate bytes.
+
+00:15:32.216 --> 00:15:35.550
+And I claim now that, yes,
+while you could interpret these
+
+00:15:35.550 --> 00:15:42.510
+as two decimal digits, 72 and 73,
+it turns out, per the ASCII system,
+
+00:15:42.510 --> 00:15:46.890
+we could map 72 and 73
+to alphabetical letters.
+
+00:15:46.890 --> 00:15:48.150
+What might those letters be?
+
+00:15:48.150 --> 00:15:51.780
+Well, if we consider our
+chart again, 72 apparently
+
+00:15:51.780 --> 00:15:55.290
+gives us a capital H. 73
+gives us the capital I.
+
+00:15:55.290 --> 00:15:59.700
+And, voila, 72 followed by 73 in
+a computer's memory, apparently,
+
+00:15:59.700 --> 00:16:02.700
+is how a computer would express HI.
+
+00:16:02.700 --> 00:16:07.050
+And of course, if we used more bytes,
+and therefore more bits, and therefore
+
+00:16:07.050 --> 00:16:11.550
+more numbers, we could represent even
+larger words than just H I, or HI.
+
+00:16:11.550 --> 00:16:14.710
+But that's exactly how a computer,
+underneath the hood so to speak,
+
+00:16:14.710 --> 00:16:17.700
+would store a word like HI.

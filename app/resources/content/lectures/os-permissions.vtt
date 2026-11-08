@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.650
+have a word file system may be
+
+00:00:01.650 --> 00:00:03.690
+written without a space as i've done
+
+00:00:03.690 --> 00:00:05.640
+here which is pretty common in the
+
+00:00:05.640 --> 00:00:08.070
+linux community or it can be written
+
+00:00:08.070 --> 00:00:10.110
+with a space the spell checkers little
+
+00:00:10.110 --> 00:00:11.370
+happier if you write it with a
+
+00:00:11.370 --> 00:00:14.994
+space but either way is fine it
+
+00:00:14.994 --> 00:00:15.840
+means the same thing
+
+00:00:16.980 --> 00:00:19.380
+and what file systems are is they
+
+00:00:19.380 --> 00:00:22.410
+are data structures that are responsible for
+
+00:00:22.410 --> 00:00:25.500
+laying out the data on a persistent
+
+00:00:25.500 --> 00:00:28.350
+storage device so what we have with
+
+00:00:28.350 --> 00:00:31.470
+a mass storage device persistent storage is
+
+00:00:31.470 --> 00:00:35.040
+one giant block of storage space we
+
+00:00:35.040 --> 00:00:37.020
+partition that block of storage space
+
+00:00:37.020 --> 00:00:40.470
+sep into different uses and different partitions
+
+00:00:40.980 --> 00:00:43.290
+but each of those partitions is itself
+
+00:00:43.290 --> 00:00:46.200
+just a block of space the file
+
+00:00:46.200 --> 00:00:48.630
+systems goal is to bring order to
+
+00:00:48.630 --> 00:00:50.700
+that block of space and make it
+
+00:00:50.700 --> 00:00:54.210
+possible for us to easily locate read
+
+00:00:54.270 --> 00:00:56.520
+and write data within that space
+
+00:00:57.360 --> 00:01:00.660
+organize that data into hierarchies which you
+
+00:01:00.660 --> 00:01:02.730
+can think of as folders to make
+
+00:01:02.730 --> 00:01:05.730
+it easier for humans to find stuff
+
+00:01:06.210 --> 00:01:07.950
+if all your files including all the
+
+00:01:07.950 --> 00:01:10.140
+operating system files were in one folder
+
+00:01:10.590 --> 00:01:12.270
+it would take forever to find anything
+
+00:01:12.270 --> 00:01:15.150
+so we like to do folder organization
+
+00:01:15.960 --> 00:01:17.340
+as well as provide
+
+00:01:17.370 --> 00:01:20.850
+ways that we pathetic humans can understand
+
+00:01:20.850 --> 00:01:23.070
+what's in a file based upon its
+
+00:01:23.070 --> 00:01:23.610
+name
+
+00:01:25.350 --> 00:01:27.510
+file systems also give us the ability
+
+00:01:27.510 --> 00:01:29.970
+to share storage among multiple different users
+
+00:01:29.970 --> 00:01:32.190
+on a computer system in multiple different
+
+00:01:32.190 --> 00:01:36.390
+programs things like file permissions allow two
+
+00:01:36.390 --> 00:01:39.450
+different users to share one system without
+
+00:01:39.450 --> 00:01:41.310
+the risk that they're going to overwrite
+
+00:01:41.310 --> 00:01:42.330
+each other's files
+
+00:01:45.420 --> 00:01:47.160
+one of the most important things that
+
+00:01:47.160 --> 00:01:50.370
+file system store along with whatever data
+
+00:01:50.400 --> 00:01:53.250
+the user wants to store his information
+
+00:01:53.250 --> 00:01:56.040
+about that data said data about data
+
+00:01:56.550 --> 00:01:57.900
+which we call meta data
+
+00:01:59.400 --> 00:02:01.170
+in this meta data includes a wide
+
+00:02:01.170 --> 00:02:03.990
+variety of stuff includes the name of
+
+00:02:03.990 --> 00:02:06.900
+the file if the file system supports
+
+00:02:06.900 --> 00:02:09.900
+permissions it'll include information about the owner
+
+00:02:09.900 --> 00:02:12.450
+of the file what group that file
+
+00:02:12.450 --> 00:02:16.500
+belongs to what it's permissions are it'll
+
+00:02:16.500 --> 00:02:19.260
+also contain information about the size of
+
+00:02:19.290 --> 00:02:21.810
+the file how big it is as
+
+00:02:21.810 --> 00:02:24.420
+well as some timestamps the most common
+
+00:02:24.420 --> 00:02:26.820
+timestamps are the creation time the time
+
+00:02:26.820 --> 00:02:28.980
+the file was first created and the
+
+00:02:28.980 --> 00:02:31.110
+modification time which is the time the
+
+00:02:31.110 --> 00:02:34.380
+file was last written some file systems
+
+00:02:34.380 --> 00:02:36.750
+also store access times which is the
+
+00:02:36.750 --> 00:02:38.160
+time that the file was last read

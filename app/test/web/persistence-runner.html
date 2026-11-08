@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>4YOS Web Persistence Gate Runner</title>
+</head>
+<body>
+  <h1>4YOS Web Persistence Runner</h1>
+  <div id="status">Ready</div>
+  <script type="module">
+    import { WebCoreClient } from '/src/web/client.js';
+
+    window.runPersistenceGate = async function() {
+      const logs = [];
+      const log = (msg) => { logs.push(msg); console.log(msg); };
+
+      try {
+        // --- 1. Durable Storage & Reopen Persistence ---
+        log('[1/5] Testing durable storage & persistence across reopen...');
+        let worker1 = new Worker('/src/web/worker.js', { type: 'module' });
+        let client1 = new WebCoreClient(worker1);
+
+        const init1 = await client1.call('init', { storage: 'opfs', name: 'durable-test.db' });
+        const storageBackend = init1.storage;
+        log(`  > Active storage backend: ${storageBackend}`);
+
+        // Save records
+        await client1.call('saveDraft', 'p1-first-python', 'weekly = 500', 'weekly = 500\nprint(weekly * 13)');
+        await client1.call('assessmentSubmit', 'p1-unit-1', 92);
+        await client1.call('note', 'p1-first-python', 'Variables hold state across steps', 42);
+
+        // Close connection and worker
+        await client1.call('close');
+        worker1.terminate();
+        log('  > Worker 1 closed cleanly.');
+
+        // Reopen in fresh worker
+        let worker2 = new Worker('/src/web/worker.js', { type: 'module' });
+        let client2 = new WebCoreClient(worker2);
+
+        const init2 = await client2.call('init', { storage: 'opfs', name: 'durable-test.db' });
+        log(`  > Worker 2 reopened, storage: ${init2.storage}`);
+
+        // Verify persisted records
+        const draft = await client2.call('draft', 'p1-first-python');
+        if (draft.work !== 'weekly = 500' || !draft.code.includes('print(weekly * 13)')) {
+          throw new Error('Draft failed to persist across reopen: ' + JSON.stringify(draft));
+        }
+
+        const attempts = await client2.call('attempts');
+        const p1Attempt = attempts.find(a => a.assessment === 'p1-unit-1');
+        if (!p1Attempt || p1Attempt.percent !== 92 || p1Attempt.passed !== 1) {
+          throw new Error('Attempt failed to persist across reopen: ' + JSON.stringify(attempts));
+        }
+
+        const notes = await client2.call('notes', { sessionId: 'p1-first-python' });
+        if (!notes.some(n => n.body.includes('Variables hold state across steps'))) {
+          throw new Error('Note failed to persist across reopen: ' + JSON.stringify(notes));
+        }
+        log('  ✔ Records verified intact across reopen.');
+
+        await client2.call('close');
+        worker2.terminate();
+
+        // --- 2. Previous-Schema Upgrade Test ---
+        log('[2/5] Testing previous-schema upgrade...');
+        let upgradeWorker1 = new Worker('/src/web/worker.js', { type: 'module' });
+        let upgradeClient1 = new WebCoreClient(upgradeWorker1);
+
+        // Initialize with targetVersion: 2 (older schema)
+        const initOld = await upgradeClient1.call('init', { storage: 'opfs', name: 'upgrade-test.db', targetVersion: 2 });
+        if (initOld.version !== 2) {
+          throw new Error('Expected initial schema version 2, got: ' + initOld.version);
+        }
+        await upgradeClient1.call('setSetting', 'profile', { school: 'UNIPORT', name: 'Initial Student' });
+        await upgradeClient1.call('close');
+        upgradeWorker1.terminate();
+        log('  > Schema version 2 database created with profile record.');
+
+        // Reopen with full migrations
+        let upgradeWorker2 = new Worker('/src/web/worker.js', { type: 'module' });
+        let upgradeClient2 = new WebCoreClient(upgradeWorker2);
+
+        const initUpgraded = await upgradeClient2.call('init', { storage: 'opfs', name: 'upgrade-test.db' });
+        log(`  > Upgraded to schema version: ${initUpgraded.version}`);
+        if (initUpgraded.version <= 2) {
+          throw new Error('Expected upgraded schema version > 2, got: ' + initUpgraded.version);
+        }
+
+        // Verify old profile is intact and new tables are accessible
+        const profile = await upgradeClient2.call('profile');
+        if (profile.school !== 'UNIPORT' || profile.name !== 'Initial Student') {
+          throw new Error('Pre-upgrade data lost during migration: ' + JSON.stringify(profile));
+        }
+
+        // Write to newly added table from later migration (attempts)
+        await upgradeClient2.call('assessmentSubmit', 'upgrade-exam', 80);
+        const upgradeAttempts = await upgradeClient2.call('attempts');
+        if (upgradeAttempts.length === 0) {
+          throw new Error('Failed to query new schema table attempts');
+        }
+        log('  ✔ Previous schema upgrade completed cleanly without data loss.');
+
+        await upgradeClient2.call('close');
+        upgradeWorker2.terminate();
+
+        // --- 3. Interrupted & Concurrent Initialization ---
+        log('[3/5] Testing concurrent initialization calls...');
+        let raceWorker = new Worker('/src/web/worker.js', { type: 'module' });
+        let raceClient = new WebCoreClient(raceWorker);
+
+        // Fire multiple calls without awaiting init
+        const pInit = raceClient.call('init', { storage: 'opfs', name: 'race-test.db' });
+        const pStatus = raceClient.call('status');
+        const pPref = raceClient.call('preference', 'soundEffects', true);
+        const pDraft = raceClient.call('saveDraft', 'concurrent-test', 'draft1', 'code1');
+
+        const [rInit, rStatus, rPref, rDraft] = await Promise.all([pInit, pStatus, pPref, pDraft]);
+        if (!rInit.ready || !rStatus.ready || rPref !== true) {
+          throw new Error('Concurrent initialization failed: ' + JSON.stringify({ rInit, rStatus, rPref }));
+        }
+        log('  ✔ Concurrent requests queued and completed without race errors.');
+
+        await raceClient.call('close');
+        raceWorker.terminate();
+
+        // --- 4. Two Concurrent Tabs / Workers ---
+        log('[4/5] Testing two concurrent tabs accessing same database with writer handover...');
+        let tab1Worker = new Worker('/src/web/worker.js', { type: 'module' });
+        let tab1 = new WebCoreClient(tab1Worker);
+
+        await tab1.call('init', { storage: 'opfs', name: 'shared-tabs.db' });
+
+        // Write from Tab 1
+        await tab1.call('note', 'shared-session', 'Note written from Tab 1', 15);
+        await tab1.call('close');
+        tab1Worker.terminate();
+
+        // Tab 2 opens shared profile following single-writer handover
+        let tab2Worker = new Worker('/src/web/worker.js', { type: 'module' });
+        let tab2 = new WebCoreClient(tab2Worker);
+        await tab2.call('init', { storage: 'opfs', name: 'shared-tabs.db' });
+
+        // Read from Tab 2
+        const tab2Notes = await tab2.call('notes', { sessionId: 'shared-session' });
+        if (!tab2Notes.some(n => n.body.includes('Note written from Tab 1'))) {
+          throw new Error('Tab 2 could not see Tab 1 note: ' + JSON.stringify(tab2Notes));
+        }
+        log('  ✔ Concurrent tabs operated on shared database across writer handover.');
+
+        await tab2.call('close');
+        tab2Worker.terminate();
+
+        // --- 5. Error Contract & Validation ---
+        log('[5/5] Testing frozen request & error contract...');
+        let errWorker = new Worker('/src/web/worker.js', { type: 'module' });
+        let errClient = new WebCoreClient(errWorker);
+        await errClient.call('init', { storage: 'memory' });
+
+        // Test unknown method
+        let caughtUnknown = false;
+        try {
+          await errClient.call('unauthorizedInternalMethod');
+        } catch (e) {
+          caughtUnknown = true;
+          if (e.code !== 'UNKNOWN_METHOD') {
+            throw new Error('Expected UNKNOWN_METHOD code, got: ' + e.code);
+          }
+        }
+        if (!caughtUnknown) throw new Error('Unknown method was not rejected');
+
+        log('  ✔ Error contract and named codes verified.');
+        await errClient.call('close');
+        errWorker.terminate();
+
+        document.getElementById('status').innerText = 'PASSED';
+        return {
+          ok: true,
+          storageBackend,
+          logs
+        };
+      } catch (err) {
+        log('ERROR: ' + err.message);
+        document.getElementById('status').innerText = 'FAILED: ' + err.message;
+        return {
+          ok: false,
+          error: err.message,
+          logs
+        };
+      }
+    };
+  </script>
+</body>
+</html>

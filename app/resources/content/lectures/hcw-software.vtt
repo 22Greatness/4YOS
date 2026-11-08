@@ -1,0 +1,201 @@
+WEBVTT
+
+00:47:11.810 --> 00:47:14.960
+So with all of these various
+devices inside of and, potentially,
+
+00:47:14.960 --> 00:47:17.041
+connected outside of
+my computer, what is
+
+00:47:17.041 --> 00:47:19.165
+it that ensures that they
+can all intercommunicate?
+
+00:47:19.165 --> 00:47:21.580
+And what is it that ensures
+that all of this works?
+
+00:47:21.580 --> 00:47:23.580
+Well, at the end of the
+day it's the, so-called,
+
+00:47:23.580 --> 00:47:26.300
+operating system whether
+it's Mac OS or Windows,
+
+00:47:26.300 --> 00:47:29.390
+which is simply software, that
+either you or, more likely,
+
+00:47:29.390 --> 00:47:32.930
+some manufacturer pre-installed
+on the computer that you bought.
+
+00:47:32.930 --> 00:47:36.320
+And that software is installed on your
+hard drive or your solid state disk
+
+00:47:36.320 --> 00:47:37.876
+so that it's there persistently.
+
+00:47:37.876 --> 00:47:40.250
+And so that, even when you
+unwrap that shrink-wrapped box
+
+00:47:40.250 --> 00:47:43.430
+that has had no power for some time,
+the operating system is ready to go.
+
+00:47:43.430 --> 00:47:46.304
+And, indeed, when you hit the power
+button on your laptop or desktop,
+
+00:47:46.304 --> 00:47:51.170
+it's the operating system, ultimately,
+that is loaded into RAM from disk,
+
+00:47:51.170 --> 00:47:52.949
+and is what you ultimately see.
+
+00:47:52.949 --> 00:47:55.490
+In fact, it's the operating
+system that gives you, literally,
+
+00:47:55.490 --> 00:47:58.010
+the graphical windows that you
+see and the icons and the buttons
+
+00:47:58.010 --> 00:47:58.850
+that you can click.
+
+00:47:58.850 --> 00:48:01.220
+But more importantly,
+it's the operating system
+
+00:48:01.220 --> 00:48:03.862
+that knows how to talk to
+your keyboard and your mouse.
+
+00:48:03.862 --> 00:48:05.570
+It's your operating
+system that knows how
+
+00:48:05.570 --> 00:48:07.222
+to display information on the screen.
+
+00:48:07.222 --> 00:48:08.930
+It's your operating
+system that knows how
+
+00:48:08.930 --> 00:48:12.380
+to move things around in memory
+and disk and reading and writing
+
+00:48:12.380 --> 00:48:13.877
+all of that information.
+
+00:48:13.877 --> 00:48:16.460
+And that's all thanks to software
+that comes with an operating
+
+00:48:16.460 --> 00:48:18.500
+system called device drivers--
+
+00:48:18.500 --> 00:48:22.580
+special software designed to talk
+to a certain model of printer,
+
+00:48:22.580 --> 00:48:25.449
+to a certain model of camera,
+or scanner, and the like.
+
+00:48:25.449 --> 00:48:28.490
+And, in fact, even when Windows or
+Mac OS or Linux or any other operating
+
+00:48:28.490 --> 00:48:32.300
+system doesn't recognize some device--
+maybe because it didn't exist when
+
+00:48:32.300 --> 00:48:36.059
+Windows or Mac OS or Linux was
+installed on your computer--
+
+00:48:36.059 --> 00:48:38.600
+well, you can very often download
+new software device drivers
+
+00:48:38.600 --> 00:48:41.510
+from the manufacturer's website
+of the manufacturer that
+
+00:48:41.510 --> 00:48:42.960
+made that new technology.
+
+00:48:42.960 --> 00:48:46.610
+And that can teach Windows and
+Mac OS and Linux and others
+
+00:48:46.610 --> 00:48:48.280
+to understand that new hardware.
+
+00:48:48.280 --> 00:48:51.800
+And so there is a future-proofing
+built into these operating systems
+
+00:48:51.800 --> 00:48:54.230
+because, at the end of the
+day, they're just software.
+
+00:48:54.230 --> 00:48:56.480
+And so it's this intersection
+of hardware and software
+
+00:48:56.480 --> 00:48:59.660
+that makes these computers
+just so powerful.
+
+00:48:59.660 --> 00:49:02.870
+Now, it's all fun and good
+to talk about hardware
+
+00:49:02.870 --> 00:49:04.730
+and see it depicted on the screen.
+
+00:49:04.730 --> 00:49:07.880
+But let's actually get our hands
+dirty here and actually enter
+
+00:49:07.880 --> 00:49:10.940
+into our own laboratory and
+take a look on the outside
+
+00:49:10.940 --> 00:49:14.510
+and inside of some actual computers.
+
+00:49:14.510 --> 00:49:18.354
+I'm here now with Dr. Colton Ogden for
+a look inside a couple of computers.
+
+00:49:18.354 --> 00:49:20.270
+COLTON OGDEN: Happy to
+be with you guys today.
+
+00:49:20.270 --> 00:49:23.057
+We have an IBM ThinkPad laptop here.
+
+00:49:23.057 --> 00:49:24.640
+Nobody really needs to use it anymore.
+
+00:49:24.640 --> 00:49:27.681
+So I figured we'd show you guys what
+a computer looks like on the outside
+
+00:49:27.681 --> 00:49:29.910
+before we start digging
+in on the inside.
+
+00:49:29.910 --> 00:49:33.110
+So you want to start off by maybe
+showing what some of these ports

@@ -1,0 +1,52 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.529
+A team has twenty-four people. Twelve can
+review code, nine can test releases, and
+five can do both.
+
+00:00:05.729 --> 00:00:10.862
+If you add twelve and nine, who gets
+counted twice? Think about one person who
+belongs to both groups.
+
+00:00:14.062 --> 00:00:19.356
+Put the five people who do both in the
+overlap. Seven people review only, and
+four test only.
+
+00:00:19.556 --> 00:00:23.796
+These are disjoint groups. That means no
+one belongs to two of the three regions we
+just made.
+
+00:00:24.996 --> 00:00:30.857
+Seven plus five plus four gives sixteen
+people who do at least one of the tasks.
+The other eight do neither.
+
+00:00:31.057 --> 00:00:38.034
+We can get sixteen another way. Add twelve
+and nine, then subtract five to undo the
+extra count of everyone in both groups.
+
+00:00:39.234 --> 00:00:45.628
+This is more than a shortcut. It gives you
+a way to audit a report. Every person in
+the union is also in the whole team.
+
+00:00:45.828 --> 00:00:51.612
+So if the count you calculate is larger
+than the team, some of the reported
+figures cannot be true together.
+
+00:00:52.812 --> 00:00:58.474
+Try a different report. The team has
+eighteen people. Twelve review, nine test,
+and two do both.
+
+00:00:58.674 --> 00:01:05.894
+Calculate the union, then compare it with
+the team size. Give both steps in your
+written argument so another person can
+check your reasoning.
